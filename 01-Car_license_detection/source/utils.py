@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import scipy
 from sklearn.model_selection import GridSearchCV, StratifiedShuffleSplit
 from sklearn.preprocessing import StandardScaler
 
@@ -52,8 +53,27 @@ class Utils(object):
             c = self.grid.__dict__['cv_results_']['params']
             a = ['params'] + \
                 [f'split{n}_test_score' for n in range(self.n_splits)]
-            dic = {h: i for h, i in zip(
-                a, (c, *[self.grid.__dict__['cv_results_'][f'split{n}_test_score'] for n in range(self.n_splits)]))}
-            return pd.DataFrame(dic)
+            data = pd.DataFrame({h: i for h, i in zip(
+                a, (c, *[self.grid.__dict__['cv_results_'][f'split{n}_test_score'] for n in range(self.n_splits)]))})
+            
+            data[list(data['params'][0].keys())] = pd.DataFrame(data['params'].tolist())
+            data.drop(['params'], axis=1, inplace=True)
+            
+            return data
         else:
             print('Grid has not been calculated')
+                       
+    def ci(self, alpha):
+        def f(x):
+            return scipy.stats.t.interval(alpha = alpha, df = self.n_splits - 1, loc = x['mean'], scale = x['sem'])
+        return f
+
+    def top_params(self, alpha = 0.95, n = None): #retorna els parametres amb millor ci acc
+        df = self.df_Grid()
+        df['mean'] = df.filter(regex='test').mean(axis = 1) #agafem columnes nombrades 'split*' calculem mitja
+        df['sem'] = df.filter(regex='test').apply(scipy.stats.sem, axis = 1) + 1e-8 #standard error of mean
+        df['ci'] = df.apply(self.ci(alpha), axis = 1)
+        df = df.sort_values('ci', ascending=False)
+        if n:
+            return df[:n]
+        return df[:]
