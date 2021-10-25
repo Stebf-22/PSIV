@@ -75,7 +75,7 @@ class ModelHandler(Utils):
         return self.models.keys()
     
     def save(self):
-        pickle.dump(self.model, open(self.model.__class__,'wb'))
+        pickle.dump(self.model, open(self.model.__class__ + '.pickle','wb'))
     
     def load(self,path):
         self.model = pickle.load(open(path,'rb'))
