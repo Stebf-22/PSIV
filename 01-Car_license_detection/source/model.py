@@ -7,6 +7,7 @@ from xgboost import XGBClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedShuffleSplit
+import pickle
 
 from source.utils import Utils
 
@@ -66,9 +67,15 @@ class ModelHandler(Utils):
             pred = self.predict(self.X)
             print(f"[INFO] Train acc  is : {self._acc(pred, self.Y):.4f}")
 
-    def predict(self, X):
+        def predict(self, X):
         X = self._ensure_dimensionalit(X)
         return self.model.predict(X)
 
     def available_models(self):
-        return models.keys()
+        return self.models.keys()
+    
+    def save(self):
+        pickle.dump(self.model, open(self.model.__class__,'wb'))
+    
+    def load(self,path):
+        self.model = pickle.load(open(path,'rb'))
