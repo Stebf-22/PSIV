@@ -2,12 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-MODEL_DICT = "source/model.pth"
 
-
-def get_model() -> nn.Module:
+def get_model(path) -> nn.Module:
     model = BinaryClassifier()
-    model.load_state_dict(torch.load(MODEL_DICT, map_location='cpu'))
+    model.load_state_dict(torch.load(path, map_location='cpu'))
     return model
 
 

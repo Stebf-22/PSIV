@@ -62,17 +62,16 @@ class ModelHandler(Utils):
             top_vals = self.top_params(0.95, 1).params.values[0]
             print(f"[INFO] The best parameters according to ci are {top_vals}")
             self.model = self.model.__class__(**top_vals)
-            self.model = self.model
             self.model.fit(self.X, self.Y)
         else:
-            self.model.fit(self.X, self.Y)
+            self.model = self.model.fit(self.X, self.Y)
         if with_score:
             pred = self.predict(self.X)
             print(f"[INFO] Train acc  is : {self._acc(pred, self.Y):.4f}")
 
     def predict(self, X):
         X = self._ensure_dimensionalit(X)
-        return self.model.predict(X)
+        return self.model.predict(self.do_scaling(X))
 
     def available_models(self):
         return self.models.keys()
