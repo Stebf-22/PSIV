@@ -55,19 +55,22 @@ class ModelHandler(Utils):
 
     def fit(self, with_score=True, with_grid=True):
         if with_grid:
+            self.grid_flag = True
             self.grid.fit(self.X, self.Y)
             print(f"[INFO] The best parameters are {self.grid.best_params_}")
             print(f"[INFO] The best score is {self.grid.best_score_:.4f}")
-            self.model = self.model.__class__(**self.grid.best_params_)
+            top_vals = self.top_params(0.95, 1).params.values[0]
+            print(f"[INFO] The best parameters according to ci are {top_vals}")
+            self.model = self.model.__class__(**top_vals)
+            self.model = self.model
             self.model.fit(self.X, self.Y)
-            self.grid_flag = True
         else:
             self.model.fit(self.X, self.Y)
         if with_score:
             pred = self.predict(self.X)
             print(f"[INFO] Train acc  is : {self._acc(pred, self.Y):.4f}")
 
-        def predict(self, X):
+    def predict(self, X):
         X = self._ensure_dimensionalit(X)
         return self.model.predict(X)
 
@@ -75,7 +78,7 @@ class ModelHandler(Utils):
         return self.models.keys()
     
     def save(self):
-        pickle.dump(self.model, open(self.model.__class__ + '.pickle','wb'))
+        pickle.dump(self.model, open(str(self.model.__class__).split('.')[-1][:-2] + '.pickle','wb'))
     
     def load(self,path):
         self.model = pickle.load(open(path,'rb'))
