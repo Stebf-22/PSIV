@@ -45,7 +45,7 @@ class Utils(object):
         cv = StratifiedShuffleSplit(
             n_splits=n_splits, test_size=0.2, random_state=42)
         grid = GridSearchCV(model, param_grid=hyperparams,
-                            cv=cv, n_jobs=6, verbose=3)
+                            cv=cv, n_jobs=6, verbose=0)
         return grid
 
     def df_Grid(self):

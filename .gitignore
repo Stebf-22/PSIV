@@ -3,4 +3,4 @@
 
 # First project
 /01-Car_license_detection/training_data/
-/01-Car_license_detection/data
+/01-Car_license_detection/*data*
