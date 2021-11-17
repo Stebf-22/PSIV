@@ -1,7 +1,11 @@
 # Jupyter stuff
 .ipynb_checkpoints/
+.idea/
 
 # First project
 /01-Car_license_detection/training_data/
 /01-Car_license_detection/*data*
 .DS_Store
+
+# Second proyect
+/02-Cancer_diagnosis/data/*
