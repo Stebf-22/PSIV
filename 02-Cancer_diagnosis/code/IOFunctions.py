@@ -2,21 +2,10 @@ import nibabel as nib
 import numpy as np
 import os
 
-
-def mkdirs(paths):
-    if isinstance(paths, list) and not isinstance(paths, str):
-        for path in paths:
-            mkdir(path)
-    else:
-        mkdir(paths)
+from typing import Tuple
 
 
-def mkdir(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-
-def load_nifti_img(filepath, dtypes=np.int16):
+def load_nifti_img(filepath, dtypes=np.int16) -> Tuple[np.ndarray, dict]:
     """
     **NIFTI Image Loader**
 
@@ -35,7 +24,7 @@ def load_nifti_img(filepath, dtypes=np.int16):
     return out_nii_array, meta
 
 
-def write_nifti_img(input_nii_array, meta, savedir, filename):
+def write_nifti_img(input_nii_array, meta, save_dir, filename) -> None:
     """
     **NIFTI Image writer**
 
@@ -45,8 +34,11 @@ def write_nifti_img(input_nii_array, meta, savedir, filename):
     :param filename: is the output file, e.g. "/LIDC-IDRI-0001_GT1.nii.gz"
     :return: None
     """
-  
-    mkdir(savedir)
+
+    # Create directory if not exists
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+
     affine = meta['affine']
     pixdim = meta['pixdim']
     dim = meta['dim']
@@ -55,6 +47,6 @@ def write_nifti_img(input_nii_array, meta, savedir, filename):
     img.header['dim'] = dim
     img.header['pixdim'] = pixdim
 
-    save_name = os.path.join(savedir, filename)
+    save_name = os.path.join(save_dir, filename)
     print('saving: ', save_name)
     nib.save(img, save_name)
