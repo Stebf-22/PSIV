@@ -5,13 +5,13 @@ import os
 from typing import Tuple
 
 
-def load_nifti_img(filepath, dtypes=np.int16) -> Tuple[np.ndarray, dict]:
+def load_nifti_img(filepath: str, dtypes: np.dtype = np.int16) -> Tuple[np.ndarray, dict]:
     """
     **NIFTI Image Loader**
 
     :param filepath: path to the input NIFTI image
     :param dtypes: data type of the nifti numpy array
-    :return: return numpy array
+    :return: nii_array, metadata dictionary
     """
 
     nim = nib.load(filepath)
@@ -24,15 +24,15 @@ def load_nifti_img(filepath, dtypes=np.int16) -> Tuple[np.ndarray, dict]:
     return out_nii_array, meta
 
 
-def write_nifti_img(input_nii_array, meta, save_dir, filename) -> None:
+def write_nifti_img(input_nii_array: np.ndarray, meta: dict, save_dir: str, filename: str) -> None:
     """
     **NIFTI Image writer**
 
-    :param input_nii_array: np.ndarray containing .nii volume
-    :param meta: .nii metadata (optional). If ommitted default (identity) values are used
-    :param savedir: is the full path to the output file, e.g. "/home/user/Desktop/BD"
+    :param input_nii_array: Array containing .nii volume
+    :param meta: .nii metadata (optional). If omitted default (identity) values are used
+    :param save_dir: is the full path to the output file, e.g. "/home/user/Desktop/BD"
     :param filename: is the output file, e.g. "/LIDC-IDRI-0001_GT1.nii.gz"
-    :return: None
+    :return: None (shows an image)
     """
 
     # Create directory if not exists
