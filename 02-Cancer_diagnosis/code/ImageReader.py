@@ -27,7 +27,7 @@ def crop_image(img,affine , center, radius,  eps= 30, show=True, log = True, alr
         x1, x2 = int(min([pointB[0], pointA[0]])), int(max([pointB[0], pointA[0]]))
         y1, y2 =int(min([pointB[1], pointA[1]])), int(max([pointB[1], pointA[1]]))
         z1,z2 =int(min([pointB[2], pointA[2]])), int(max([pointB[2], pointA[2]]))
-        ROI =img[x1-eps:x2+eps, y1-eps: y2-eps, z1-eps:z2-eps]
+        ROI =img[x1-eps:x2+eps, y1-eps: y2-eps, z1:z2]
         if show:
             mat = img[:, :, int(point[2])]
             mat2 = copy.deepcopy(img[:, :, int(point[2])])
@@ -40,15 +40,17 @@ def crop_image(img,affine , center, radius,  eps= 30, show=True, log = True, alr
             VolumeCutBrowser(ROI)
         return ROI
     else:
-        plt.imshow(img[:,:,idx_roi])
-        plt.show()
+        if show:
+            plt.imshow(img[:,:,idx_roi])
+            plt.show()
+        return img
 
 
 def read_img_and_points(path, prefix = ''):
     img = [x for x in os.listdir(path) if 'nii' in x and prefix in x][0]
     img, trf = IO.load_nifti_img(path + img)
     if 'Seg' not in prefix:
-        print(os.listdir(path))
+        #print(os.listdir(path))
         acsv = [x for x in os.listdir(path) if 'acsv' in x][0]
         affine = trf['affine']
         with open(path + acsv, 'r') as hdlr:
