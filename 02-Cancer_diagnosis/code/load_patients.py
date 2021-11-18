@@ -3,10 +3,17 @@ import IOFunctions as IO
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
-from typing import Iterable
 
 
-def load_diagnosis_data(path: str = '../data/Diagnosis/', limit: int = -1) -> Iterable[np.ndarray, pd.DataFrame]:
+def read_METADATA_csv(path):
+    if path.split('.')[-1] == 'csv':
+        return pd.read_csv(path)
+    raise ValueError
+
+def apply_transformation():
+    pass
+
+def load_diagnosis_data(path: str = '../data/Diagnosis/', limit: int = -1, start: int = 0):
     """
     Diagnosis loader tool
 
@@ -16,22 +23,18 @@ def load_diagnosis_data(path: str = '../data/Diagnosis/', limit: int = -1) -> It
     :return: patients dict, Rl_Nd
     """
 
-    patients = os.listdir(path)
+    patients = [ x for x in  os.listdir(path) if not ('csv' in x) ]
+    csv_path = [ x for x in  os.listdir(path) if 'csv' in x]
     data = {}
 
-    for patient in tqdm(patients[:limit]):
+    for patient in tqdm(patients[start : limit]):
         if os.path.isdir(path + patient):
             data[patient] = IO.load_nifti_img(
                 path + patient + [f'/{route}' for route in os.listdir(path + patient) if 'nii' in route][0])
-
-        # Shine case: radiolung_nodule_diagnosis
-        else:
-            Rl_Nd = pd.read_csv(path + patient)
-
-    return data, Rl_Nd
+    return data
 
 
-def load_nodule_data(path: str = '../data/NoduleSegmentation/') -> dict:
+def load_nodule_data(path: str = '../data/NoduleSegmentation/'):
     """
     NoduleSegmentation tool
 
@@ -42,7 +45,7 @@ def load_nodule_data(path: str = '../data/NoduleSegmentation/') -> dict:
 
     patients = os.listdir(path)
     data = {}
-    for patient in patients:
+    for patient in tqdm(patients):
         data[patient] = {}
         if os.path.isdir(path + patient):
             files = os.listdir(path + patient + '/INSP_SIN/')
@@ -55,3 +58,8 @@ def load_nodule_data(path: str = '../data/NoduleSegmentation/') -> dict:
             pass
 
     return data
+
+
+if __name__ == '__main__':
+
+    print(load_diagnosis_data(limit=2, start=0))
