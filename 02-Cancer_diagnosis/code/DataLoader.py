@@ -11,12 +11,12 @@ from ImageReader import read_img_and_points
 from ImageReader import crop_image
 from cout_slices import count_slices
 import matplotlib.pyplot as plt
-from ImageTransformations import resize
+from ImageTransformations import resize, otsu_transformation
+from torchvision import transforms
 
 class SegmentationDataset(Dataset):
 
-
-    def __init__(self, path_segmentation, path_diagnosi):
+    def __init__(self, path_segmentation, path_diagnosi, transforms = None):
 
         self.path_segmentation = path_segmentation
         self.path_diagnosi = path_diagnosi
@@ -26,6 +26,8 @@ class SegmentationDataset(Dataset):
         self.actual=None
         self.actual_ofset = 0
         self.image_counter = 0
+        self.transforms = transforms if transforms is not None else lambda x: x
+
     def _read_images(self, idx):
         res = []
 
@@ -37,20 +39,17 @@ class SegmentationDataset(Dataset):
             if 'ROI' in elements:
                 data, affine, center, radius = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'CTD')
                 ROI = crop_image(data, affine, center, radius, show=False, eps = 20, log=False)
-                #print(elements)
-                #for x in range(res.shape[2]):
-                #    res[:,:,x] = resize(ROI[:,:,x], (430, 329) )  
                 base['data'] =  ROI
+
             if 'Seg_Nodule1' in elements:
                 data = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'Seg_Nodule1')
                 ROI = crop_image(data[0], affine, center, radius, show=False, eps = 20, log=False)
                 base['GT'] =  ROI
+
             if 'Seg_Nodule2' in elements:
                 data = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'Seg_Nodule2')
                 ROI = crop_image(data[0], affine, center, radius, show=False, eps = 20, log=False)
-                base['GT2'] =  ROI
-
-                 
+                base['GT2'] =  ROI  
     
         self.actual= base
         return base
@@ -73,11 +72,10 @@ class SegmentationDataset(Dataset):
                 idx = pure_idx
                 self._read_images(self.image_counter)
                 self.image_counter += 1
-                print(f"here")
-            print(f"Here")
+
             img = self.actual
             res = {'img': resize(img['data'][:,:,idx],(240,240)) , 'GT': resize(img['GT'][:,:,idx],(64,64)) }
-        return res
+        return {k: self.transforms(v) for k,v in res.items()}
     
     def __len__(self ):
         #return count_slices("/home/user/PSIV/02-Cancer_diagnosis/data/NoduleSegmentation", "CTD",segmentation=True)
@@ -89,16 +87,17 @@ class SegmentationDataset(Dataset):
 
 
 if __name__ == '__main__':
-    path_segmentation = "02-Cancer_diagnosis/data/NoduleSegmentation/"
-    path_diagnosi = "/home/user/PSIV/02-Cancer_diagnosis/data/Diagnosis"
-    dataset = SegmentationDataset(path_segmentation, path_diagnosi)
+    path_segmentation = os.path.abspath('.') +"/02-Cancer_diagnosis/data/NoduleSegmentation/"
+    path_diagnosi = os.path.abspath('.') +"/02-Cancer_diagnosis/data/Diagnosis/"
+    transform = transforms.Compose([transforms.Lambda(lambda x: otsu_transformation(x))])
+    dataset = SegmentationDataset(path_segmentation, path_diagnosi, transforms = transform)
     dataloader = DataLoader(dataset, batch_size = 30)
     d = {}
-    for x in range(30,31):
+    for x in range(1,5):
         data = dataset[x]
         f, axarr = plt.subplots(1,2) 
         axarr[0].imshow(data['img'])
         axarr[1].imshow(data['GT'])
         plt.show()
-        break
+    
         
