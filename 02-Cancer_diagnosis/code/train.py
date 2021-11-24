@@ -12,7 +12,6 @@ def train(epochs,model, optimizer, scheduler,loss, dataloader):
         for element in dataloader:
             optimizer.zero_grad()
             t,y = element['img'].reshape(30,1,240,240).float() , element['GT'].reshape(30,1,64,64).float()
-        
             out = model(t)
             loss_ = loss(out, y)
             loss_.backward()
