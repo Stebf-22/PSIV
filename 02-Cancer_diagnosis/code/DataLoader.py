@@ -38,17 +38,17 @@ class SegmentationDataset(Dataset):
         for elements in sorted(os.listdir(self.path_segmentation + patient + '/INSP_SIN/')):
             if 'ROI' in elements:
                 data, affine, center, radius = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'CTD')
-                ROI = crop_image(data, affine, center, radius, show=False, eps = 20, log=False)
+                ROI = crop_image(data, affine, center, radius, show=False, padding = 20, log=False)
                 base['data'] =  ROI
 
             if 'Seg_Nodule1' in elements:
                 data = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'Seg_Nodule1')
-                ROI = crop_image(data[0], affine, center, radius, show=False, eps = 20, log=False)
+                ROI = crop_image(data[0], affine, center, radius, padding=False, eps = 20, log=False)
                 base['GT'] =  ROI
 
             if 'Seg_Nodule2' in elements:
                 data = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'), prefix = 'Seg_Nodule2')
-                ROI = crop_image(data[0], affine, center, radius, show=False, eps = 20, log=False)
+                ROI = crop_image(data[0], affine, center, radius, padding=False, eps = 20, log=False)
                 base['GT2'] =  ROI  
     
         self.actual= base
