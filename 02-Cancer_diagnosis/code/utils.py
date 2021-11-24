@@ -3,6 +3,8 @@ import pandas as pd
 import scipy
 from sklearn.model_selection import GridSearchCV, StratifiedShuffleSplit
 from sklearn.preprocessing import StandardScaler
+import seaborn as sns
+import matplotlib.pyplot as plt 
 
 
 class Utils(object):
@@ -12,16 +14,6 @@ class Utils(object):
         for element in X:
             Y.append(sum(element.flatten()) > element.flatten().shape[0] // 2)
         return np.asarray(Y)
-
-    def testing(self):
-
-        ### SVM Testing ###
-        X = np.random.rand(200, 60, 30)
-        Y = func_overX(X)
-
-        ### GridSearch ###
-        model = SVMCHandler(X, Y)
-        model.fit(with_score=True, with_grid=True)
 
     def _ensure_dimensionalit(self, arr):
         return arr if len(arr[0].shape) == 1 else [x.flatten() for x in arr]
@@ -78,3 +70,29 @@ class Utils(object):
         if n:
             return df[:n]
         return df[:]
+
+    def boxplots(self, n_params=10, duplicates=False):  # for top_params_df
+        df = self.top_params(0.95, n_params)
+        
+        df['name'] = df[list(pd.DataFrame(df['params'].tolist()))].astype(str).agg('-'.join, axis=1)
+        df = df.loc[:, df.columns.str.contains('score|name')].set_index('name')
+        if not duplicates:
+            df.drop_duplicates(inplace = True)
+        df = pd.DataFrame(pd.DataFrame(df.unstack('name'), columns=[
+                        'value']).droplevel(0)).reset_index(level=0)
+
+        sns.set(font='Gill Sans', font_scale=1.2,
+                palette='pastel', style="whitegrid")
+
+        fig = plt.figure(figsize=(13, 6))
+        ax = fig.add_subplot(111)
+
+        # Plot with horizontal boxes
+        sns.boxplot(x='value', y='name', data=df, width=0.6)
+
+        # Tweak the visual presentation
+        ax.xaxis.grid(True)
+        ax.set(xlabel="Accuracy", ylabel="")
+        sns.despine(trim=True, left=True, bottom=True)
+        plt.title(f"{n_params} Splits Boxplots {str(self.model.__class__).split('.')[-1][:-2]}")
+        plt.show()
