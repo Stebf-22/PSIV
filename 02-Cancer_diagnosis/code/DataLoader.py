@@ -10,7 +10,7 @@ import os
 import csv
 from ImageReader import read_img_and_points
 from ImageReader import crop_image
-from cout_slices import count_slices
+from count_slices import count_slices
 import matplotlib.pyplot as plt
 from ImageTransformations import resize, otsu_transformation
 from torchvision import transforms
@@ -90,7 +90,7 @@ class SegmentationDataset(Dataset):
 
 class DiagnosisEnd2End(Dataset):
 
-    def __init__(self, diagnosis_path: str, nodules_path: str):
+    def __init__(self, diagnosis_path: str, nodules_path: str, is_segmented: bool = False):
         super().__init__()
 
         self.diagnosis_path: list = [diagnosis_path + patient + "/" for patient in os.listdir(diagnosis_path)
@@ -105,6 +105,8 @@ class DiagnosisEnd2End(Dataset):
 
         self.anonymous_nodules: dict = {x: y for x, y in enumerate(self.nodules.keys())}
 
+        self.is_segmented: is_segmented
+
     def __getitem__(self, idx: int):
         patient = self.anonymous_nodules[idx]
 
@@ -114,9 +116,7 @@ class DiagnosisEnd2End(Dataset):
 
         roi = crop_image(scan, affine, center, radius, show=False, padding=5, log=False)
 
-        roi = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
-
-        patient_data['ROI'] = torch.from_numpy(roi).permute(2, 0, 1)
+        patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
         patient_data['GT'] = self.nodules[patient]
 
         return patient_data
