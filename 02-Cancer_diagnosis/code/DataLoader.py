@@ -26,7 +26,7 @@ class SegmentationDataset(Dataset):
             x.split('_')[1][1:]))
         self.segmentation_dirs = [x for x in os.listdir(self.path_segmentation) if not 'txt' in x]
         self.actual = None
-        self.actual_offset = 0
+        self.actual_ofset = 0
         self.image_counter = 0
         self.transforms = transforms if transforms is not None else lambda x: x
 
@@ -116,7 +116,7 @@ class DiagnosisEnd2End(Dataset):
 
         roi = crop_image(scan, affine, center, radius, show=False, padding=5, log=False)
 
-        patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
+        patient_data['ROI'] = np.array([resize(roi[:, :, x], (64, 64)) for x in range(roi.shape[2])])
         patient_data['GT'] = self.nodules[patient]
 
         return patient_data
@@ -139,7 +139,7 @@ if __name__ == '__main__':
     #     axarr[1].imshow(data['GT'])
     #     plt.show()
 
-    path_segmentation = "../data/Diagnosis/"
+    path_segmentation = ""
     nodules_path = "../data/Diagnosis/Radiolung_NoduleDiagnosis.csv"
     dataset = DataLoader(DiagnosisEnd2End(path_segmentation, nodules_path), batch_size=1)
 
