@@ -117,7 +117,7 @@ class DiagnosisEnd2End(Dataset):
         return patient_data
 
     def __len__(self):
-            return len(self.diagnosis_path)
+        return len(self.diagnosis_path)
 
 
 if __name__ == "__main__":
