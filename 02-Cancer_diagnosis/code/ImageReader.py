@@ -40,8 +40,8 @@ def crop_image(img: np.ndarray, affine: np.ndarray, center: np.ndarray, radius: 
         x1, x2 = int(min([point_b[0], point_a[0]])), int(max([point_b[0], point_a[0]]))
         y1, y2 = int(min([point_b[1], point_a[1]])), int(max([point_b[1], point_a[1]]))
         z1, z2 = int(min([point_b[2], point_a[2]])), int(max([point_b[2], point_a[2]]))
-
-        roi = img[x1 - padding:x2 + padding, y1 - padding: y2 - padding, z1:z2]
+        z1,z2 = padding if z1 < 0 else z1 ,  0 if z2 < 0 else z2
+        roi = img[x1 - padding:x2 + padding, y1 - padding: y2 - padding, z1 - padding :z2 + padding]
 
         # Display the area
         if show:
