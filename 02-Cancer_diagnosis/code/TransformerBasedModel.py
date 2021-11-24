@@ -20,13 +20,14 @@ print("Predicted class:", model.config.id2label[predicted_class_idx])'''
 
 class ViTHandler(nn.Module):
 
-    def __init__(self, model_name = 'google/vit-large-patch32-384', out_size = 2, transfer=False):
+    def __init__(self, model_name = 'google/vit-large-patch32-384', out_size = 2, transfer=False, out_per_slice = 10):
         super().__init__()
         self.feature_extractor = ViTFeatureExtractor.from_pretrained(model_name)
         self.model = ViTForImageClassification.from_pretrained(model_name)
-        self.model.__dict__['_modules']['classifier'] = nn.Linear(1024, 2)
+        self.model.__dict__['_modules']['classifier'] = nn.Linear(1024, 10)
+        self.last_layer = nn.Linear(10 * )
         self.__finetune_freezing()
-        
+
     def __finetune_freezing(self):
         for p in self.model.parameters():
             p.requires_grad = False
@@ -44,7 +45,7 @@ class ViTHandler(nn.Module):
             to_eval[x] = t[idx:idx+3,:,:]
             idx+=3
         return self.model(to_eval)
+
 if __name__ == '__main__':
     model = ViTHandler()
-
     print(model(np.zeros((384,384,201))).logits.flatten())
