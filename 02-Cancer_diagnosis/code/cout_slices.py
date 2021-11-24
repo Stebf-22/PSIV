@@ -15,17 +15,16 @@ from tqdm import tqdm
 
 def count_slices(path, prefix, segmentation = False, log = True):
     path = path if path[-1] == '/' else path +'/'
-    patients = [ path + x for x in os.listdir(path) if 'txt' not in x]
+    patients = [path + x for x in os.listdir(path) if 'txt' not in x]
     data = None
     prefix2 = '' if not segmentation else '/INSP_SIN/'
     counter = 0
     for patient in tqdm(patients):
         data = read_img_and_points(patient + prefix2 , prefix=prefix)
-        ROI = crop_image(*data, show=False, log=False, eps=0)
+        ROI = crop_image(*data, show=False, log=False, padding=0)
         counter +=   ROI.shape[2]
     if log: print(f"The toal number of slices to be segmented is {counter}")
     return counter
-
 
 
 if __name__ == '__main__':

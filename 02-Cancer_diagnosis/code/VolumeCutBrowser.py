@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 
+
 ################################################################################
 # 
 # EXAMPLE:
@@ -17,7 +18,7 @@ import sys
 
 class VolumeCutBrowser:
 
-    def __init__(self, ims, idx=None, ims_seg = None, cut = 'SA'):
+    def __init__(self, ims: np.ndarray, idx: int = None, ims_seg=None, cut: str = 'SA'):
         self.IMS = ims
         self.idx = idx
         self.IMSSeg = ims_seg
@@ -28,13 +29,13 @@ class VolumeCutBrowser:
 
         if idx is None:
             if self.Cut == 'SA':
-                self.idx = np.int(np.round(self.IMS.shape[2]/2))
+                self.idx = np.int(np.round(self.IMS.shape[2] / 2))
 
         elif self.Cut == 'Sag':
-            self.idx = np.int(np.round(self.IMS.shape[0]/2))
+            self.idx = np.int(np.round(self.IMS.shape[0] / 2))
 
         elif self.Cut == 'Cor':
-            self.idx = np.int(np.round(self.IMS.shape[1]/2))
+            self.idx = np.int(np.round(self.IMS.shape[1] / 2))
 
         self.fig, self.ax = plt.subplots()
         self.fig.canvas.mpl_connect('key_press_event', self.press)
@@ -51,26 +52,26 @@ class VolumeCutBrowser:
         elif event.key == 'z':
             self.idx += 1
             if self.Cut is 'SA':
-               Mx = self.IMS.shape[2]-1
+                mx = self.IMS.shape[2] - 1
             elif self.Cut is 'Sag':
-               Mx = self.IMS.shape[0]-1
+                mx = self.IMS.shape[0] - 1
             elif self.Cut is 'Cor':
-               Mx = self.IMS.shape[1]-1
+                mx = self.IMS.shape[1] - 1
 
-            self.idx = min(Mx, self.idx)
+            self.idx = min(mx, self.idx)
             self.draw_scene()
 
     def draw_scene(self):
         self.ax.cla()
 
-        if self.Cut is 'SA':
-            img = self.IMS[:, :, self.idx]
-
-        elif self.Cut is 'Sag':
+        if self.Cut is 'Sag':
             img = np.squeeze(self.IMS[self.idx, :, :])
 
         elif self.Cut is 'Cor':
             img = np.squeeze(self.IMS[:, self.idx, :])
+
+        else:   # self.Cut is 'SA'
+            img = self.IMS[:, :, self.idx]
 
         self.ax.imshow(img, cmap='gray')
         self.ax.set_title(f'Cut: {str(self.idx)}. Press "x" to decrease; "z" to increase')
