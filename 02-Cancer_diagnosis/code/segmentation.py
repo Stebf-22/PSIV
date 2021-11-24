@@ -7,7 +7,6 @@ import os
 import numpy as np
 
 class Segment:
-
     def __init__(self, model_type, diagnosi_path, trained_model_path):
 
         self.model_type = model_type
@@ -25,6 +24,7 @@ class Segment:
         segmented = np.zeros_like(ROI)
         for index in range(ROI.shape[-1]):
             segmented[:,:,index] = self.segment2D(ROI[:,:, index], transformations=transformations)
+        return segmented
     def segment_all(self, transformations=None, save=True):
         segmented = []
         if 'SegmentedDiagnosi' not in os.listdir('02-Cancer_diagnosis/data'): os.mkdir("02-Cancer_diagnosis/data/SegmentedDiagnosi/")
