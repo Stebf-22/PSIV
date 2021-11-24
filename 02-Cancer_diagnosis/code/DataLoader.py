@@ -1,19 +1,10 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
-import os
-import load_patients as lp
-import IOFunctions as io
-import pandas as pd
 import numpy as np
-# import nib
 import os
 import csv
-from ImageReader import read_img_and_points
-from ImageReader import crop_image
-from count_slices import count_slices
-import matplotlib.pyplot as plt
-from ImageTransformations import resize, otsu_transformation
-from torchvision import transforms
+from ImageReader import read_img_and_points, crop_image
+from ImageTransformations import resize
 
 
 class SegmentationDataset(Dataset):
@@ -105,44 +96,33 @@ class DiagnosisEnd2End(Dataset):
 
         self.anonymous_nodules: dict = {x: y for x, y in enumerate(self.nodules.keys())}
 
-        self.is_segmented: is_segmented
+        self.is_segmented: bool = is_segmented
 
     def __getitem__(self, idx: int):
         patient = self.anonymous_nodules[idx]
-
         patient_data = dict()
 
-        scan, affine, center, radius = read_img_and_points(self.diagnosis_path[patient])
+        if self.is_segmented:
+            patient_data['ROI'] = np.load(self.diagnosis_path[patient], allow_pickle=True)
 
-        roi = crop_image(scan, affine, center, radius, show=False, padding=5, log=False)
+        else:
+            scan, affine, center, radius = read_img_and_points(self.diagnosis_path[patient])
 
-        patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
+            roi = crop_image(scan, affine, center, radius, show=False, padding=5, log=False)
+
+            patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
+
         patient_data['GT'] = self.nodules[patient]
 
         return patient_data
 
     def __len__(self):
-        return len(self.diagnosis_path)
+            return len(self.diagnosis_path)
 
 
-if __name__ == '__main__':
-    # path_segmentation = os.path.abspath('.') + "/02-Cancer_diagnosis/data/NoduleSegmentation/"
-    # path_diagnosi = os.path.abspath('.') + "/02-Cancer_diagnosis/data/Diagnosis/"
-    # transform = transforms.Compose([transforms.Lambda(lambda x: otsu_transformation(x))])
-    # dataset = SegmentationDataset(path_segmentation, path_diagnosi, transforms=transform)
-    # dataloader = DataLoader(dataset, batch_size=30)
-    # d = {}
-    # for x in range(1, 5):
-    #     data = dataset[x]
-    #     f, axarr = plt.subplots(1, 2)
-    #     axarr[0].imshow(data['img'])
-    #     axarr[1].imshow(data['GT'])
-    #     plt.show()
+if __name__ == "__main__":
 
-    path_segmentation = "../data/Diagnosis/"
-    nodules_path = "../data/Diagnosis/Radiolung_NoduleDiagnosis.csv"
-    dataset = DataLoader(DiagnosisEnd2End(path_segmentation, nodules_path), batch_size=1)
+    diagnosis_path = "02-Cancer_diagnosis/data/Diagnosis/"
+    nodules_path = "02-Cancer_diagnosis/data/Diagnosis/Radiolung_NoduleDiagnosis.csv"
 
-    for x in dataset:
-        print(x['ROI'])
-        break
+    data_laoder = DiagnosisEnd2End(diagnosis_path, nodules_path)
