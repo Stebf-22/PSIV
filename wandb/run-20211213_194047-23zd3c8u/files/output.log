@@ -1,0 +1,10 @@
+
+  0%|                                                                                                                                        | 0/34 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 73, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 40, in train
+    out = model(t)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\Unet2.py", line 27, in __call__
+    return torch.nn.Sigmoid(upconv1)
+TypeError: __init__() takes 1 positional argument but 2 were given

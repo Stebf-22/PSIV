@@ -1,0 +1,14 @@
+
+  0%|                                                                                                                                       | 0/109 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 57, in <module>
+    train(10, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 33, in train
+    t,y = transform(element['img'].reshape(BATCH_SIZE,1,240,240).float()).cuda() , element['GT'].reshape(BATCH_SIZE,1,64,64).float().cuda()
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torchvision\transforms\transforms.py", line 61, in __call__
+    img = t(img)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torchvision\transforms\transforms.py", line 98, in __call__
+    return F.to_tensor(pic)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torchvision\transforms\functional.py", line 114, in to_tensor
+    raise TypeError('pic should be PIL Image or ndarray. Got {}'.format(type(pic)))
+TypeError: pic should be PIL Image or ndarray. Got <class 'torch.Tensor'>

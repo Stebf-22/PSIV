@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [00:43<00:00,  2.52it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊         | 101/109 [00:38<00:03,  2.61it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 46, in <module>
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 50, gamma=0.1)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 29, in train
+    cum_loss += loss_.item()
+KeyboardInterrupt

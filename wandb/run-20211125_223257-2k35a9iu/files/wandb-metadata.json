@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.9.9",
+    "heartbeatAt": "2021-11-25T21:32:58.374183",
+    "startedAt": "2021-11-25T21:32:57.504210",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\Usuario\\Desktop\\Uni\\DataDaniMAPSIV\\PSIV\\02-Cancer_diagnosis\\code\\train.py",
+    "codePath": "02-Cancer_diagnosis\\code\\train.py",
+    "host": "Silex-Pro",
+    "username": "Usuario",
+    "executable": "C:\\Users\\Usuario\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\python.exe"
+}

@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [00:44<00:00,  2.44it/s]
+
+
+
+
+
+
+ 34%|██████████████████████████████████████████▊                                                                                   | 37/109 [00:16<00:32,  2.24it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 48, in <module>
+    train(10, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 29, in train
+    cum_loss += loss_.item()
+KeyboardInterrupt

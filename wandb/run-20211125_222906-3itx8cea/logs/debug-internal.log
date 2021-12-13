@@ -1,0 +1,887 @@
+2021-11-25 22:29:07,369 INFO    MainThread:11808 [internal.py:wandb_internal():87] W&B internal server running at pid: 11808, started at: 2021-11-25 22:29:07.369005
+2021-11-25 22:29:07,371 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: check_version
+2021-11-25 22:29:07,371 INFO    WriterThread:11808 [datastore.py:open_for_write():77] open: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\run-3itx8cea.wandb
+2021-11-25 22:29:07,373 DEBUG   SenderThread:11808 [sender.py:send():238] send: header
+2021-11-25 22:29:07,373 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: check_version
+2021-11-25 22:29:07,468 DEBUG   SenderThread:11808 [sender.py:send():238] send: run
+2021-11-25 22:29:07,699 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: run_start
+2021-11-25 22:29:07,701 INFO    SenderThread:11808 [dir_watcher.py:__init__():169] watching files in: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files
+2021-11-25 22:29:07,701 INFO    SenderThread:11808 [sender.py:_start_run_threads():825] run started: 3itx8cea with start time 1637875746
+2021-11-25 22:29:07,701 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:07,703 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:07,711 DEBUG   HandlerThread:11808 [meta.py:__init__():40] meta init
+2021-11-25 22:29:07,711 DEBUG   HandlerThread:11808 [meta.py:__init__():54] meta init done
+2021-11-25 22:29:07,711 DEBUG   HandlerThread:11808 [meta.py:probe():214] probe
+2021-11-25 22:29:07,723 DEBUG   HandlerThread:11808 [meta.py:_save_pip():58] save pip
+2021-11-25 22:29:07,723 DEBUG   HandlerThread:11808 [meta.py:_save_pip():72] save pip done
+2021-11-25 22:29:07,724 DEBUG   HandlerThread:11808 [meta.py:probe():252] probe done
+2021-11-25 22:29:07,743 DEBUG   SenderThread:11808 [sender.py:send():238] send: files
+2021-11-25 22:29:07,743 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2021-11-25 22:29:07,754 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:29:07,755 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:29:07,976 DEBUG   SenderThread:11808 [sender.py:send():238] send: config
+2021-11-25 22:29:07,976 DEBUG   SenderThread:11808 [sender.py:send():238] send: config
+2021-11-25 22:29:08,325 INFO    Thread-11 :11808 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpul2ci3qewandb\1tla9p26-wandb-metadata.json
+2021-11-25 22:29:08,702 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:08,702 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:08,702 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\requirements.txt
+2021-11-25 22:29:08,702 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-metadata.json
+2021-11-25 22:29:10,714 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:11,577 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:11,577 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:11,578 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:11,734 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:11,813 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:11,813 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:11,815 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:12,050 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:12,050 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:12,051 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:12,290 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:12,291 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:12,291 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:12,530 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:12,530 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:12,530 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:12,748 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:12,771 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:12,771 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:12,772 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:13,010 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:13,010 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:13,011 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:13,250 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:13,250 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:13,251 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:13,491 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:13,491 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:13,492 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:13,733 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:13,733 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:13,734 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:13,772 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:13,974 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:13,974 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:13,977 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:14,778 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:14,778 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:15,316 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:15,316 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:15,317 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:15,559 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:15,559 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:15,559 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:15,794 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:15,800 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:15,801 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:15,801 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:16,042 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:16,042 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:16,045 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:16,285 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:16,286 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:16,286 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:16,527 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:16,527 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:16,534 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:16,769 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:16,770 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:16,770 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:16,815 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:16,815 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:17,012 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:17,012 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:17,012 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:17,255 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:17,255 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:17,256 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:17,496 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:17,497 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:17,497 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:17,739 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:17,739 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:17,740 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:17,833 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:17,833 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:19,863 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:21,022 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:21,022 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:21,024 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:21,261 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:21,261 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:21,261 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:21,499 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:21,500 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:21,500 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:21,740 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:21,740 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:21,741 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:21,876 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:21,877 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:21,981 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:21,981 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:21,983 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:22,223 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:22,224 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:22,224 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:22,465 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:22,466 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:22,467 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:22,708 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:22,708 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:22,708 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:22,882 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:22,949 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:22,949 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:22,949 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:22,987 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:29:22,987 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:29:23,190 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:23,190 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:23,191 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:23,430 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:23,431 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:23,432 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:23,671 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:23,671 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:23,672 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:23,890 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:23,890 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:25,169 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:25,170 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:25,170 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:25,406 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:25,406 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:25,407 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:25,646 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:25,647 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:25,648 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:25,887 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:25,887 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:25,888 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:25,893 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:25,893 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:26,129 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:26,129 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:26,130 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:26,373 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:26,373 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:26,374 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:26,616 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:26,617 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:26,617 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:26,859 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:26,860 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:26,861 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:26,895 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:27,102 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:27,103 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:27,103 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:27,346 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:27,347 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:27,348 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:27,593 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:27,593 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:27,594 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:27,837 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:27,838 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:27,839 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:27,904 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:27,904 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:28,080 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:28,080 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:28,081 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:28,323 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:28,324 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:28,325 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:28,566 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:28,567 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:28,569 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:28,805 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:28,806 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:28,808 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:28,916 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:29,931 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:30,125 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:30,126 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:30,127 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:30,363 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:30,364 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:30,364 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:30,603 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:30,603 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:30,606 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:30,849 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:30,850 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:30,851 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:30,940 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:31,090 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:31,091 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:31,091 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:31,332 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:31,333 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:31,333 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:31,576 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:31,577 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:31,577 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:31,824 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:31,824 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:31,825 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:31,961 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:31,962 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:32,064 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:32,064 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:32,065 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:32,304 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:32,304 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:32,306 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:32,976 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:33,341 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:33,341 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:33,343 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:33,583 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:33,583 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:33,584 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:33,824 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:33,824 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:33,825 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:33,979 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:33,980 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:34,065 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:34,067 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:34,068 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:34,309 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:34,310 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:34,311 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:34,551 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:34,552 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:34,554 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:34,795 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:34,796 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:34,796 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:34,983 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:35,038 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:35,038 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:35,040 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:35,284 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:35,285 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:35,286 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:35,529 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:35,529 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:35,531 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:35,774 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:35,775 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:35,776 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:35,992 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:35,992 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:36,016 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:36,016 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:36,017 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:36,257 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:36,258 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:36,259 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:36,497 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:36,497 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:36,498 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:37,001 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:37,891 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:37,892 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:37,893 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:38,011 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:38,012 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:38,012 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\config.yaml
+2021-11-25 22:29:38,131 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:38,132 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:38,134 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:38,196 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:29:38,197 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:29:38,400 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:38,401 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:38,401 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:38,500 DEBUG   SenderThread:11808 [sender.py:send():238] send: stats
+2021-11-25 22:29:38,617 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:38,618 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:38,618 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:38,860 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:38,861 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:38,863 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:39,024 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:39,105 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:39,105 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:39,106 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:39,349 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:39,349 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:39,350 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:39,591 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:39,592 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:39,593 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:39,836 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:39,836 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:39,838 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:40,036 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:40,037 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:40,078 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:40,078 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:40,079 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:40,317 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:40,318 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:40,319 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:40,558 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:40,558 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:40,559 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:41,051 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:42,063 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:43,966 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:43,967 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:43,970 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:44,069 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:44,205 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:44,206 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:44,207 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:44,444 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:44,445 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:44,446 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:44,686 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:44,686 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:44,687 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:44,929 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:44,929 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:44,930 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:45,083 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:45,170 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:45,171 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:45,172 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:45,411 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:45,412 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:45,413 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:45,655 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:45,656 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:45,658 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:45,896 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:45,896 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:45,897 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:46,090 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:46,091 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:47,172 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:47,172 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:47,174 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:47,409 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:47,410 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:47,411 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:47,650 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:47,651 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:47,652 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:47,890 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:47,891 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:47,891 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:48,114 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:48,114 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:48,132 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:48,132 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:48,134 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:48,374 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:48,375 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:48,376 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:48,614 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:48,614 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:48,616 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:48,856 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:48,857 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:48,858 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:49,116 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:49,888 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:49,888 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:49,891 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:50,119 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:50,119 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:50,127 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:50,128 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:50,128 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:50,367 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:50,367 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:50,367 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:50,608 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:50,609 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:50,609 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:50,851 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:50,852 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:50,853 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:51,093 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:51,094 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:51,096 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:51,097 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:51,097 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:51,098 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:51,127 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:52,131 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:52,629 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:52,629 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:52,629 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:52,871 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:52,873 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:52,874 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:53,113 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:53,113 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:53,114 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:53,135 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:53,355 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:53,356 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:53,357 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:53,402 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:29:53,402 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:29:53,618 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:53,619 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:53,620 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:53,844 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:53,844 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:53,845 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:54,085 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:54,085 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:54,086 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:54,142 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:54,142 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:54,327 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:54,329 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:54,331 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:54,573 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:54,574 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:54,576 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:54,812 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:54,813 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:54,814 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:55,052 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:55,054 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:55,055 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:55,162 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:56,167 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:56,546 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:56,546 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:56,546 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:56,784 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:56,784 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:56,785 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:57,023 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:57,023 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:57,024 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:57,168 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:57,263 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:57,264 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:57,264 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:57,505 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:57,506 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:57,506 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:57,748 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:57,748 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:57,749 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:57,991 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:57,992 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:57,992 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:58,171 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:29:58,171 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:29:58,233 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:58,233 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:58,233 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:58,473 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:58,473 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:58,474 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:58,713 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:58,713 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:58,713 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:58,953 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:29:58,953 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:29:58,954 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:29:59,186 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:00,191 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:02,526 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:02,527 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:02,529 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:02,765 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:02,765 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:02,765 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:03,002 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:03,003 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:03,004 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:03,196 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:03,243 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:03,244 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:03,244 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:03,486 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:03,486 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:03,487 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:03,729 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:03,729 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:03,730 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:03,971 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:03,972 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:03,972 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:04,198 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:04,199 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:04,214 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:04,215 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:04,215 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:04,457 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:04,458 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:04,458 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:04,701 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:04,701 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:04,703 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:04,941 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:04,941 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:04,942 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:05,179 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:05,181 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:05,182 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:05,200 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:06,200 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:06,560 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:06,561 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:06,561 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:06,799 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:06,799 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:06,799 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:07,038 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:07,038 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:07,039 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:07,209 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:07,281 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:07,281 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:07,281 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:07,524 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:07,525 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:07,525 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:07,766 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:07,767 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:07,768 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:08,009 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:08,010 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:08,010 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:08,225 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:08,226 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:08,252 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:08,252 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:08,253 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:08,497 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:08,497 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:08,498 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:08,635 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:30:08,635 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:30:08,835 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:08,836 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:08,836 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:08,982 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:08,982 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:08,983 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:09,226 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:09,226 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:09,227 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:09,230 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:09,470 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:09,470 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:09,471 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:09,712 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:09,714 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:09,715 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:09,952 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:09,953 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:09,954 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:10,193 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:10,193 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:10,194 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:10,243 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:10,243 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:11,409 DEBUG   SenderThread:11808 [sender.py:send():238] send: stats
+2021-11-25 22:30:11,438 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:11,438 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:11,439 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:11,677 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:11,677 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:11,678 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:11,917 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:11,917 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:11,918 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:12,159 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:12,159 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:12,160 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:12,257 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:12,258 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:12,401 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:12,401 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:12,401 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:12,642 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:12,642 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:12,643 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:12,884 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:12,884 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:12,886 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:13,125 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:13,125 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:13,126 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:13,266 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:13,365 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:13,366 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:13,366 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:13,604 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:13,605 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:13,605 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:14,276 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:14,276 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:14,718 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:14,718 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:14,721 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:14,958 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:14,958 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:14,959 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:15,196 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:15,197 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:15,197 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:15,278 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:15,436 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:15,437 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:15,439 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:15,681 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:15,682 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:15,683 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:15,924 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:15,925 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:15,925 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:16,167 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:16,167 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:16,168 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:16,288 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:16,289 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:16,412 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:16,412 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:16,413 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:16,656 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:16,656 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:16,657 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:16,899 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:16,900 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:16,900 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:17,141 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:17,141 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:17,142 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:17,300 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:17,383 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:17,383 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:17,384 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:17,623 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:17,623 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:17,624 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:17,864 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:17,864 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:17,865 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:18,308 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:18,308 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:19,171 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:19,171 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:19,171 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:19,313 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:19,409 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:19,409 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:19,409 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:19,649 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:19,650 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:19,651 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:19,895 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:19,895 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:19,896 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:20,139 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:20,140 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:20,142 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:20,330 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:20,330 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:20,385 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:20,386 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:20,386 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:20,629 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:20,629 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:20,631 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:20,875 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:20,875 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:20,876 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:21,120 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:21,120 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:21,122 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:21,344 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:21,365 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:21,366 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:21,368 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:21,610 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:21,611 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:21,613 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:21,852 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:21,853 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:21,854 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:22,351 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:22,351 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:23,839 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: stop_status
+2021-11-25 22:30:23,839 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: stop_status
+2021-11-25 22:30:24,372 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:25,207 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:25,208 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:25,212 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:25,374 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:25,449 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:25,449 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:25,450 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:25,691 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:25,691 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:25,693 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:25,931 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:25,932 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:25,933 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:26,174 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:26,174 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:26,175 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:26,379 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:26,380 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:26,417 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:26,418 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:26,419 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:26,661 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:26,661 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:26,662 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:26,901 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:26,901 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:26,903 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:27,145 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:27,145 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:27,147 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:27,386 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:28,400 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:28,445 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:28,446 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:28,446 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:28,686 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:28,686 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:28,687 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:28,925 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:28,926 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:28,927 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:29,167 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:29,167 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:29,167 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:29,401 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:29,407 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:29,408 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:29,409 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:29,651 DEBUG   SenderThread:11808 [sender.py:send():238] send: history
+2021-11-25 22:30:29,651 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:29,652 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:29,712 WARNING MainThread:11808 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2021-11-25 22:30:30,414 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:30,416 INFO    Thread-8  :11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:30,498 DEBUG   SenderThread:11808 [sender.py:send():238] send: telemetry
+2021-11-25 22:30:30,500 DEBUG   SenderThread:11808 [sender.py:send():238] send: exit
+2021-11-25 22:30:30,500 INFO    SenderThread:11808 [sender.py:send_exit():370] handling exit code: 255
+2021-11-25 22:30:30,500 INFO    SenderThread:11808 [sender.py:send_exit():372] handling runtime: 82
+2021-11-25 22:30:30,501 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:30,502 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:30,503 INFO    SenderThread:11808 [sender.py:send_exit():382] send defer
+2021-11-25 22:30:30,503 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:30,504 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,504 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 0
+2021-11-25 22:30:30,505 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,505 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 0
+2021-11-25 22:30:30,505 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 1
+2021-11-25 22:30:30,505 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,506 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 1
+2021-11-25 22:30:30,624 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:30,624 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,625 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 1
+2021-11-25 22:30:30,625 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 2
+2021-11-25 22:30:30,625 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:30,625 DEBUG   SenderThread:11808 [sender.py:send():238] send: stats
+2021-11-25 22:30:30,626 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,626 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 2
+2021-11-25 22:30:30,627 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,627 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 2
+2021-11-25 22:30:30,627 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 3
+2021-11-25 22:30:30,627 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,627 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 3
+2021-11-25 22:30:30,628 DEBUG   SenderThread:11808 [sender.py:send():238] send: summary
+2021-11-25 22:30:30,628 INFO    SenderThread:11808 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-11-25 22:30:30,628 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,628 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 3
+2021-11-25 22:30:30,628 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 4
+2021-11-25 22:30:30,629 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,629 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 4
+2021-11-25 22:30:30,629 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,629 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 4
+2021-11-25 22:30:30,744 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:30,863 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 5
+2021-11-25 22:30:30,863 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:30,864 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:30,864 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 5
+2021-11-25 22:30:30,864 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:30,864 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 5
+2021-11-25 22:30:30,864 INFO    SenderThread:11808 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-11-25 22:30:30,973 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,431 INFO    SenderThread:11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:31,431 INFO    SenderThread:11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:31,431 INFO    SenderThread:11808 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\config.yaml
+2021-11-25 22:30:31,431 INFO    SenderThread:11808 [dir_watcher.py:finish():313] scan: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files
+2021-11-25 22:30:31,432 INFO    SenderThread:11808 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\config.yaml config.yaml
+2021-11-25 22:30:31,432 INFO    SenderThread:11808 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log output.log
+2021-11-25 22:30:31,433 INFO    SenderThread:11808 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\requirements.txt requirements.txt
+2021-11-25 22:30:31,438 INFO    SenderThread:11808 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-metadata.json wandb-metadata.json
+2021-11-25 22:30:31,438 INFO    SenderThread:11808 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json wandb-summary.json
+2021-11-25 22:30:31,439 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 6
+2021-11-25 22:30:31,440 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:31,442 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:31,442 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 6
+2021-11-25 22:30:31,443 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:31,444 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 6
+2021-11-25 22:30:31,444 INFO    SenderThread:11808 [file_pusher.py:finish():177] shutting down file pusher
+2021-11-25 22:30:31,554 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,555 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:31,664 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,666 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:31,772 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,772 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:31,882 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,882 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:31,986 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:31,987 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,062 INFO    Thread-12 :11808 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\config.yaml
+2021-11-25 22:30:32,066 INFO    Thread-15 :11808 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\wandb-summary.json
+2021-11-25 22:30:32,073 INFO    Thread-14 :11808 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\requirements.txt
+2021-11-25 22:30:32,094 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:32,094 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,128 INFO    Thread-13 :11808 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\files\output.log
+2021-11-25 22:30:32,210 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:32,210 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,324 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:32,324 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,339 INFO    Thread-7  :11808 [sender.py:transition_state():395] send defer: 7
+2021-11-25 22:30:32,340 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:32,340 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 7
+2021-11-25 22:30:32,340 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:32,340 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 7
+2021-11-25 22:30:32,441 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:32,686 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 8
+2021-11-25 22:30:32,687 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,688 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:32,688 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 8
+2021-11-25 22:30:32,689 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:32,689 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 8
+2021-11-25 22:30:32,689 INFO    SenderThread:11808 [sender.py:transition_state():395] send defer: 9
+2021-11-25 22:30:32,691 DEBUG   SenderThread:11808 [sender.py:send():238] send: final
+2021-11-25 22:30:32,691 DEBUG   SenderThread:11808 [sender.py:send():238] send: footer
+2021-11-25 22:30:32,692 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: defer
+2021-11-25 22:30:32,692 INFO    HandlerThread:11808 [handler.py:handle_request_defer():147] handle defer: 9
+2021-11-25 22:30:32,693 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: defer
+2021-11-25 22:30:32,693 INFO    SenderThread:11808 [sender.py:send_request_defer():391] handle sender defer: 9
+2021-11-25 22:30:32,804 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: poll_exit
+2021-11-25 22:30:32,805 DEBUG   SenderThread:11808 [sender.py:send_request():252] send_request: poll_exit
+2021-11-25 22:30:32,805 INFO    SenderThread:11808 [file_pusher.py:join():182] waiting for file pusher
+2021-11-25 22:30:33,258 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: get_summary
+2021-11-25 22:30:33,259 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: sampled_history
+2021-11-25 22:30:33,260 DEBUG   HandlerThread:11808 [handler.py:handle_request():130] handle_request: shutdown
+2021-11-25 22:30:33,261 INFO    HandlerThread:11808 [handler.py:finish():731] shutting down handler
+2021-11-25 22:30:33,697 INFO    WriterThread:11808 [datastore.py:close():281] close: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211125_222906-3itx8cea\run-3itx8cea.wandb
+2021-11-25 22:30:34,265 INFO    SenderThread:11808 [sender.py:finish():1091] shutting down sender
+2021-11-25 22:30:34,265 INFO    SenderThread:11808 [file_pusher.py:finish():177] shutting down file pusher
+2021-11-25 22:30:34,265 INFO    SenderThread:11808 [file_pusher.py:join():182] waiting for file pusher
+2021-11-25 22:30:34,270 INFO    MainThread:11808 [internal.py:handle_exit():77] Internal process exited

@@ -1,0 +1,8 @@
+
+  0%|                                                                                                                                       | 0/109 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 54, in <module>
+    train(10, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 30, in train
+    t,y = transform(element['img'].reshape(BATCH_SIZE,1,64,64).float()).cuda() , element['GT'].reshape(BATCH_SIZE,1,64,64).float().cuda()
+RuntimeError: shape '[10, 1, 64, 64]' is invalid for input of size 576000

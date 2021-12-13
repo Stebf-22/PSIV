@@ -1,0 +1,160 @@
+2021-12-13 19:01:38,241 INFO    MainThread:13304 [wandb_setup.py:_flush():71] setting env: {}
+2021-12-13 19:01:38,242 INFO    MainThread:13304 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-12-13 19:01:38,242 INFO    MainThread:13304 [wandb_init.py:_log_setup():371] Logging user logs to C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\logs\debug.log
+2021-12-13 19:01:38,242 INFO    MainThread:13304 [wandb_init.py:_log_setup():372] Logging internal logs to C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\logs\debug-internal.log
+2021-12-13 19:01:38,243 INFO    MainThread:13304 [wandb_init.py:init():404] calling init triggers
+2021-12-13 19:01:38,243 INFO    MainThread:13304 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2021-12-13 19:01:38,245 INFO    MainThread:13304 [wandb_init.py:init():449] starting backend
+2021-12-13 19:01:38,245 INFO    MainThread:13304 [backend.py:_multiprocessing_setup():95] multiprocessing start_methods=spawn, using: spawn
+2021-12-13 19:01:38,250 INFO    MainThread:13304 [backend.py:ensure_launched():199] starting backend process...
+2021-12-13 19:01:38,343 INFO    MainThread:13304 [backend.py:ensure_launched():204] started backend process with pid: 2644
+2021-12-13 19:01:38,344 INFO    MainThread:13304 [wandb_init.py:init():458] backend started and connected
+2021-12-13 19:01:38,345 INFO    MainThread:13304 [wandb_init.py:init():519] updated telemetry
+2021-12-13 19:01:38,366 INFO    MainThread:13304 [wandb_init.py:init():549] communicating current version
+2021-12-13 19:01:39,040 INFO    MainThread:13304 [wandb_init.py:init():554] got version response 
+2021-12-13 19:01:39,040 INFO    MainThread:13304 [wandb_init.py:init():564] communicating run to backend with 30 second timeout
+2021-12-13 19:01:39,292 INFO    MainThread:13304 [wandb_init.py:init():592] starting run threads in backend
+2021-12-13 19:01:39,398 INFO    MainThread:13304 [wandb_run.py:_console_start():1816] atexit reg
+2021-12-13 19:01:39,399 INFO    MainThread:13304 [wandb_run.py:_redirect():1690] redirect: SettingsConsole.WRAP
+2021-12-13 19:01:39,400 INFO    MainThread:13304 [wandb_run.py:_redirect():1727] Wrapping output streams.
+2021-12-13 19:01:39,401 INFO    MainThread:13304 [wandb_run.py:_redirect():1751] Redirects installed.
+2021-12-13 19:01:39,402 INFO    MainThread:13304 [wandb_init.py:init():619] run started, returning control to user process
+2021-12-13 19:01:39,403 INFO    MainThread:13304 [wandb_config.py:__setitem__():144] config set learning_rate = 0.001 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000243E24D58B0>>
+2021-12-13 19:01:39,403 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb learning_rate 0.001 None
+2021-12-13 19:01:39,404 INFO    MainThread:13304 [wandb_config.py:__setitem__():144] config set batch_size = 32 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000243E24D58B0>>
+2021-12-13 19:01:39,404 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb batch_size 32 None
+2021-12-13 19:02:02,041 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb ('_wandb', 'visualize', 'my_histogram') {'panel_type': 'Vega2', 'panel_config': {'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'my_histogram_table'}], 'fields': []}]}]}, 'panelDefId': 'wandb/histogram/v0', 'transform': {'name': 'tableWithLeafColNames'}, 'fieldSettings': {'value': 'pixel_val'}, 'stringSettings': {'title': 'Prediction Score Distribution'}}} None
+2021-12-13 19:02:31,879 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb ('_wandb', 'visualize', 'my_histogram') {'panel_type': 'Vega2', 'panel_config': {'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'my_histogram_table'}], 'fields': []}]}]}, 'panelDefId': 'wandb/histogram/v0', 'transform': {'name': 'tableWithLeafColNames'}, 'fieldSettings': {'value': 'pixel_val'}, 'stringSettings': {'title': 'Prediction Score Distribution'}}} None
+2021-12-13 19:02:58,308 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb ('_wandb', 'visualize', 'my_histogram') {'panel_type': 'Vega2', 'panel_config': {'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'my_histogram_table'}], 'fields': []}]}]}, 'panelDefId': 'wandb/histogram/v0', 'transform': {'name': 'tableWithLeafColNames'}, 'fieldSettings': {'value': 'pixel_val'}, 'stringSettings': {'title': 'Prediction Score Distribution'}}} None
+2021-12-13 19:03:24,551 INFO    MainThread:13304 [wandb_run.py:_config_callback():962] config_cb ('_wandb', 'visualize', 'my_histogram') {'panel_type': 'Vega2', 'panel_config': {'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'my_histogram_table'}], 'fields': []}]}]}, 'panelDefId': 'wandb/histogram/v0', 'transform': {'name': 'tableWithLeafColNames'}, 'fieldSettings': {'value': 'pixel_val'}, 'stringSettings': {'title': 'Prediction Score Distribution'}}} None
+2021-12-13 19:03:38,346 INFO    MainThread:13304 [wandb_run.py:_atexit_cleanup():1786] got exitcode: 255
+2021-12-13 19:03:38,346 INFO    MainThread:13304 [wandb_run.py:_restore():1758] restore
+2021-12-13 19:03:38,715 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12913136
+  total_bytes: 12913136
+}
+
+2021-12-13 19:03:39,037 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12913136
+  total_bytes: 12913136
+}
+
+2021-12-13 19:03:39,476 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12913136
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:39,580 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12913136
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:39,691 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12913136
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:39,799 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:39,908 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:40,015 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:40,125 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:40,235 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:40,826 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+
+2021-12-13 19:03:41,134 INFO    MainThread:13304 [wandb_run.py:_wait_for_finish():1916] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  media_count: 12
+  artifact_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 12921619
+  total_bytes: 12921619
+}
+local_info {
+}
+
+2021-12-13 19:03:42,232 INFO    MainThread:13304 [wandb_run.py:_append_history():2134] rendering history
+2021-12-13 19:03:42,232 INFO    MainThread:13304 [wandb_run.py:_append_summary():2089] rendering summary
+2021-12-13 19:03:42,232 INFO    MainThread:13304 [wandb_run.py:_append_files():2184] logging synced files

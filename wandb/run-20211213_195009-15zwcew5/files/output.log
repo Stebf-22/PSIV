@@ -1,0 +1,7 @@
+  0%|                                                                                                                                        | 0/34 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 72, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 37, in train
+    t,y = transform(element['img'].reshape(BATCH_SIZE,1,64,64).float()).cuda() , element['GT'].reshape(BATCH_SIZE,1,64,64).float().cuda()
+NameError: name 'transform' is not defined
