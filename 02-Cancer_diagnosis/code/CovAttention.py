@@ -21,7 +21,7 @@ class ConvBlock(nn.Module):
         out = self.relu(self.batch_norm2(self.conv2(out)))
         out = self.relu(self.batch_norm3(self.conv3(out)))
         out = self.relu(self.batch_norm4(self.conv4(out)))
-        print(img.shape, out.shape)
+        #print(img.shape, out.shape)
         return self.out(out.reshape(img.shape[0], -1))
     
 
@@ -32,10 +32,10 @@ class Attention(nn.Module):
         self.embed_dim = embed_dim
         self.n_heads = n_heads
         self.att = torch.nn.MultiheadAttention(self.embed_dim, self.n_heads)
-        self.last = nn.Linear(14 * self.embed_dim, 2)
+        self.last = nn.Linear(14 * self.embed_dim, 1)
 
     def forward(self, features):
-        print(features.shape)
+      
         attn_output, weights = self.att(features, features, features)
         charachteristics = attn_output.reshape(1, -1)
         return self.last(charachteristics)

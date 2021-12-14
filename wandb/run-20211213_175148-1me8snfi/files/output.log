@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 53, in <module>
+    train(10, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 21, in train
+    torchvision.transforms.Normalize(    ),
+TypeError: __init__() missing 2 required positional arguments: 'mean' and 'std'

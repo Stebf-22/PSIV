@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:21<00:00,  1.57it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 62, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 48, in train
+    out = otsu_transformation((255 * out).int().detach().cpu().numpy())
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\ImageTransformations.py", line 60, in otsu_transformation
+    threshold, image = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+cv2.error: OpenCV(4.5.4) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1557: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 4 (CV_32SC1)

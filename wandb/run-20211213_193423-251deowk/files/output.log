@@ -1,0 +1,93 @@
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:21<00:00,  1.55it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:17<00:00,  1.91it/s]
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:18<00:00,  1.87it/s]
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:17<00:00,  1.93it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:18<00:00,  1.84it/s]
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:16<00:00,  2.01it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:18<00:00,  1.83it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:19<00:00,  1.77it/s]
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:17<00:00,  1.94it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 71, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 57, in train
+    plt.show()
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\matplotlib\pyplot.py", line 368, in show
+    return _backend_mod.show(*args, **kwargs)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\matplotlib\backend_bases.py", line 3524, in show
+    cls.mainloop()
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\matplotlib\backends\_backend_tk.py", line 958, in mainloop
+    first_manager.window.mainloop()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\tkinter\__init__.py", line 1429, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt

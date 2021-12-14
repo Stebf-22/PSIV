@@ -53,24 +53,23 @@ class SegmentationDataset(Dataset):
 
         if self.actual is None:
             img = self._read_images(self.image_counter)
-            print(f"idx is {idx}")
-            res = {'img': resize(img['data'][:, :, idx], (240, 240)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
+            #print(f"idx is {idx}")
+            res = {'img': resize(img['data'][:, :, idx], (64, 64)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
 
         else:
-            print(idx)
             idx -= self.actual_ofset
-            print(idx, self.actual['data'].shape[2])
+            #print(idx, self.actual['data'].shape[2])
             if idx >= self.actual['data'].shape[2]:
                 self.actual_ofset += idx
 
-                print(f"idx is :", idx, "actual offset: ", self.actual_ofset)
+             #   print(f"idx is :", idx, "actual offset: ", self.actual_ofset)
                 pure_idx -= self.actual_ofset
                 idx = pure_idx
                 self._read_images(self.image_counter)
                 self.image_counter += 1
 
             img = self.actual
-            res = {'img': resize(img['data'][:, :, idx], (240, 240)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
+            res = {'img': resize(img['data'][:, :, idx], (64, 64)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
 
         return {k: self.transforms(v) for k, v in res.items()}
 
@@ -104,6 +103,8 @@ class DiagnosisEnd2End(Dataset):
 
         if self.is_segmented:
             patient_data['ROI'] = np.load(self.diagnosis_path[patient], allow_pickle=True)
+            patient_data['GT'] = self.nodules[patient]
+            return patient_data
 
         else:
             scan, affine, center, radius = read_img_and_points(self.diagnosis_path[patient])
@@ -112,10 +113,7 @@ class DiagnosisEnd2End(Dataset):
 
             patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
 
-<<<<<<< HEAD
-        patient_data['ROI'] = np.array([resize(roi[:, :, x], (64, 64)) for x in range(roi.shape[2])])
-=======
->>>>>>> d53584e898002355624913986abcea60e42326f2
+        #patient_data['ROI'] = np.array([resize(roi[:, :, x], (240, 240)) for x in range(roi.shape[2])])
         patient_data['GT'] = self.nodules[patient]
 
         return patient_data
@@ -124,9 +122,7 @@ class DiagnosisEnd2End(Dataset):
         return len(self.diagnosis_path)
 
 
-if __name__ == "__main__":
-    
+if __name__ == "__main__":    
     diagnosis_path = "02-Cancer_diagnosis/data/Diagnosis/"
     nodules_path = "02-Cancer_diagnosis/data/Diagnosis/Radiolung_NoduleDiagnosis.csv"
-
     data_laoder = DiagnosisEnd2End(diagnosis_path, nodules_path)

@@ -1,0 +1,19 @@
+  0%|                                                                                                                                        | 0/34 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 72, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 37, in train
+    t,y = transform(element['img'].reshape(BATCH_SIZE,1,64,64).float()).cuda() , element['GT'].reshape(BATCH_SIZE,1,64,64).float().cuda()
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torchvision\transforms\transforms.py", line 61, in __call__
+    img = t(img)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torchvision\transforms\transforms.py", line 437, in __call__
+    return self.lambd(img)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 30, in <lambda>
+    transform = T.Compose([T.Normalize(mean = (-640 ) , std=(380)), T.Lambda(lambda x:  otsu_transformation(x.int().numpy())), T.ToTensor(), T.Lambda(lambda x: x.float())])
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\ImageTransformations.py", line 60, in otsu_transformation
+    threshold, image = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+cv2.error: OpenCV(4.5.4) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1557: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 4 (CV_32SC1)

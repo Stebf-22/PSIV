@@ -1,0 +1,797 @@
+2021-12-13 19:01:38,928 INFO    MainThread:2644 [internal.py:wandb_internal():87] W&B internal server running at pid: 2644, started at: 2021-12-13 19:01:38.927219
+2021-12-13 19:01:38,929 INFO    WriterThread:2644 [datastore.py:open_for_write():77] open: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\run-2djc7w0r.wandb
+2021-12-13 19:01:38,930 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: check_version
+2021-12-13 19:01:38,931 DEBUG   SenderThread:2644 [sender.py:send():238] send: header
+2021-12-13 19:01:38,931 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: check_version
+2021-12-13 19:01:39,041 DEBUG   SenderThread:2644 [sender.py:send():238] send: run
+2021-12-13 19:01:39,292 INFO    SenderThread:2644 [dir_watcher.py:__init__():169] watching files in: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files
+2021-12-13 19:01:39,293 INFO    SenderThread:2644 [sender.py:_start_run_threads():825] run started: 2djc7w0r with start time 1639418498
+2021-12-13 19:01:39,293 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:39,293 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: run_start
+2021-12-13 19:01:39,293 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:39,306 DEBUG   HandlerThread:2644 [meta.py:__init__():40] meta init
+2021-12-13 19:01:39,306 DEBUG   HandlerThread:2644 [meta.py:__init__():54] meta init done
+2021-12-13 19:01:39,306 DEBUG   HandlerThread:2644 [meta.py:probe():214] probe
+2021-12-13 19:01:39,338 DEBUG   HandlerThread:2644 [meta.py:_setup_git():204] setup git
+2021-12-13 19:01:39,381 DEBUG   HandlerThread:2644 [meta.py:_setup_git():211] setup git done
+2021-12-13 19:01:39,381 DEBUG   HandlerThread:2644 [meta.py:_save_pip():58] save pip
+2021-12-13 19:01:39,381 DEBUG   HandlerThread:2644 [meta.py:_save_pip():72] save pip done
+2021-12-13 19:01:39,381 DEBUG   HandlerThread:2644 [meta.py:probe():252] probe done
+2021-12-13 19:01:39,387 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:01:39,387 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2021-12-13 19:01:39,399 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:01:39,400 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:01:39,589 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:01:39,589 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:01:40,020 INFO    Thread-17 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\24g0l2rc-wandb-metadata.json
+2021-12-13 19:01:40,308 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\requirements.txt
+2021-12-13 19:01:40,308 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:40,308 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-metadata.json
+2021-12-13 19:01:40,309 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:42,321 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:43,543 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:43,543 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:43,545 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:43,604 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:43,605 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:43,605 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:43,663 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:43,663 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:43,664 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:44,325 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:45,078 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:45,078 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:45,079 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:45,128 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:45,128 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:45,129 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:45,178 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:45,179 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:45,179 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:45,229 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:45,229 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:45,230 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:45,340 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:46,341 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:48,362 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:49,104 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:49,104 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:49,105 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:49,167 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:49,167 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:49,168 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:49,227 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:49,228 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:49,228 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:49,367 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:50,935 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:50,936 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:50,937 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:50,987 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:50,988 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:50,988 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:51,037 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:51,037 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:51,037 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:51,087 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:51,087 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:51,088 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:51,137 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:51,138 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:51,138 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:51,392 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:52,312 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:52,313 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:52,313 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:52,364 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:52,364 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:52,365 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:52,404 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:52,405 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:52,413 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:52,414 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:52,414 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:53,264 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:53,264 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:53,266 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:53,315 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:53,315 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:53,316 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:53,367 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:53,368 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:53,368 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:53,411 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:53,420 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:53,420 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:53,421 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:53,471 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:53,471 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:53,472 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:54,418 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:54,419 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:54,589 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:01:54,590 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:01:54,786 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:54,786 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:54,787 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:54,787 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:54,787 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:54,787 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:54,810 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:54,810 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:54,810 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:54,860 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:54,860 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:54,861 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:55,427 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:56,440 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:01:57,952 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:57,952 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:57,956 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:58,017 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:58,017 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:58,018 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:58,466 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:01:59,164 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:59,164 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:59,165 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:59,223 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:59,223 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:59,224 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:59,284 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:01:59,284 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:01:59,285 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:01:59,472 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:00,145 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:00,145 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:00,147 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:00,196 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:00,197 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:00,198 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:00,198 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:00,198 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:00,198 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:00,476 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:00,476 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:02,042 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:02:02,485 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:08,164 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: log_artifact
+2021-12-13 19:02:08,164 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: log_artifact
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_35_c75443b1e376e1f6f72b.table.json
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_36_5d7f615457703cb39d8c.png
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_36_029cd81f4dd7cb0d34b9.png
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images
+2021-12-13 19:02:09,552 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table
+2021-12-13 19:02:09,788 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:02:10,376 INFO    Thread-19 :2644 [upload_job.py:push():95] Uploaded file C:\Users\Usuario\.cache\wandb\artifacts\obj\md5\d5\c678681631c869c8547407c4e40ed4
+2021-12-13 19:02:10,560 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:11,338 INFO    SenderThread:2644 [sender.py:send_request_log_artifact():989] logged artifact run-2djc7w0r-my_histogram_table - {'id': 'QXJ0aWZhY3Q6NDgwNTgwNDE=', 'digest': '269a79b1639a4fb7e1d02603ae63895a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc3MTEyMTY=', 'latestArtifact': None}, 'version': 'latest'}
+2021-12-13 19:02:11,577 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:11,577 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\table\my_histogram_table_35_c75443b1e376e1f6f72b.table.json with policy now
+2021-12-13 19:02:11,579 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:11,579 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:11,582 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:11,585 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:11,585 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\model_36_029cd81f4dd7cb0d34b9.png with policy now
+2021-12-13 19:02:11,588 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:11,588 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\GT_36_5d7f615457703cb39d8c.png with policy now
+2021-12-13 19:02:11,590 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:11,590 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:11,596 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:11,598 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:02:11,807 DEBUG   SenderThread:2644 [sender.py:send():238] send: stats
+2021-12-13 19:02:11,808 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:11,809 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:11,810 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:11,811 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:11,812 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:11,813 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:11,813 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:11,813 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:11,814 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:12,291 INFO    Thread-22 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\u27vvzy1-media/images/GT_36_5d7f615457703cb39d8c.png
+2021-12-13 19:02:12,292 INFO    Thread-21 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\2wgxe2wm-media/images/model_36_029cd81f4dd7cb0d34b9.png
+2021-12-13 19:02:12,506 INFO    Thread-20 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\3pesx0dn-media/table/my_histogram_table_35_c75443b1e376e1f6f72b.table.json
+2021-12-13 19:02:12,573 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:12,573 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml
+2021-12-13 19:02:12,573 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:12,890 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:12,890 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:12,891 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:12,939 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:12,939 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:12,940 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:12,989 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:12,990 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:12,990 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:13,039 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:13,040 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:13,041 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:13,581 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:14,595 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:17,113 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:17,114 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:17,116 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:17,175 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:17,176 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:17,176 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:17,235 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:17,235 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:17,235 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:17,621 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:18,633 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:18,971 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:18,972 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:18,972 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:19,021 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:19,022 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:19,022 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:19,076 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:19,077 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:19,078 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:19,133 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:19,134 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:19,136 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:19,187 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:19,188 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:19,189 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:19,641 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:20,610 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:20,610 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:20,611 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:20,653 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:20,653 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:20,662 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:20,662 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:20,663 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:20,712 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:20,713 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:20,713 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:21,662 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:21,687 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:21,687 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:21,689 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:21,739 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:21,739 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:21,740 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:21,792 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:21,792 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:21,793 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:21,841 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:21,841 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:21,842 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:21,891 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:21,891 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:21,892 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:22,669 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:22,670 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:23,179 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:23,179 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:23,180 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:23,232 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:23,233 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:23,233 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:23,283 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:23,283 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:23,284 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:23,335 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:23,335 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:23,336 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:23,683 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:24,699 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:26,822 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:02:26,822 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:02:27,432 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:27,432 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:27,435 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:27,492 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:27,493 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:27,494 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:27,723 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:28,589 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:28,589 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:28,590 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:28,646 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:28,646 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:28,647 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:28,704 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:28,705 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:28,705 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:28,739 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:28,739 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:29,607 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:29,607 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:29,609 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:29,674 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:29,674 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:29,675 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:29,675 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:29,676 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:29,676 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:29,750 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:30,765 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:31,880 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:02:38,037 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: log_artifact
+2021-12-13 19:02:38,037 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: log_artifact
+2021-12-13 19:02:38,840 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_72_20f8dacc6e0ea52072cd.table.json
+2021-12-13 19:02:38,840 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table
+2021-12-13 19:02:39,765 INFO    Thread-24 :2644 [upload_job.py:push():95] Uploaded file C:\Users\Usuario\.cache\wandb\artifacts\obj\md5\60\d2fa628d768e8b51f5880f52ebc0c3
+2021-12-13 19:02:39,851 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:39,851 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_73_e268a32e60963964aae0.png
+2021-12-13 19:02:39,851 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_73_5d7f615457703cb39d8c.png
+2021-12-13 19:02:39,851 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images
+2021-12-13 19:02:40,818 INFO    SenderThread:2644 [sender.py:send_request_log_artifact():989] logged artifact run-2djc7w0r-my_histogram_table - {'id': 'QXJ0aWZhY3Q6NDgwNTgxOTA=', 'digest': '2fe86a6c55537b053458b8e4901e2022', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc3MTEyMTY=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgwNTgwNDE=', 'versionIndex': 0}}, 'version': 'latest'}
+2021-12-13 19:02:40,818 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:40,818 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\table\my_histogram_table_72_20f8dacc6e0ea52072cd.table.json with policy now
+2021-12-13 19:02:40,819 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:40,819 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:40,820 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:40,820 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:40,820 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\model_73_e268a32e60963964aae0.png with policy now
+2021-12-13 19:02:40,820 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:02:40,821 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\GT_73_5d7f615457703cb39d8c.png with policy now
+2021-12-13 19:02:40,821 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:40,821 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:40,822 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:40,822 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:40,825 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:40,826 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:40,826 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:40,826 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:40,826 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:40,827 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:40,827 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:40,829 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:40,856 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:41,435 INFO    Thread-27 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\2i2nhb9c-media/images/GT_73_5d7f615457703cb39d8c.png
+2021-12-13 19:02:41,466 INFO    Thread-26 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\2guexm2y-media/images/model_73_e268a32e60963964aae0.png
+2021-12-13 19:02:41,672 INFO    Thread-25 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\1h1fwbw3-media/table/my_histogram_table_72_20f8dacc6e0ea52072cd.table.json
+2021-12-13 19:02:41,861 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:42,020 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:02:42,044 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:02:42,252 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:42,252 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:42,253 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:42,253 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:42,254 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:42,254 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:42,255 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:42,255 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:42,255 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:42,255 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:42,255 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:42,256 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:42,868 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:42,869 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml
+2021-12-13 19:02:43,882 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:43,951 DEBUG   SenderThread:2644 [sender.py:send():238] send: stats
+2021-12-13 19:02:45,719 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:45,719 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:45,720 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:45,778 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:45,778 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:45,779 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:45,835 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:45,835 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:45,836 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:45,908 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:47,204 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:47,204 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:47,205 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:47,254 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:47,255 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:47,255 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:47,306 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:47,306 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:47,307 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:47,356 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:47,356 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:47,357 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:47,406 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:47,406 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:47,407 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:47,929 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:47,929 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:48,588 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:48,588 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:48,589 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:48,639 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:48,640 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:48,640 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:48,691 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:48,691 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:48,692 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:48,943 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:49,549 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:49,549 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:49,550 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:49,603 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:49,604 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:49,604 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:49,656 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:49,656 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:49,657 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:49,710 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:49,710 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:49,711 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:49,760 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:49,760 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:49,760 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:49,952 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:49,953 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:50,859 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:50,860 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:50,860 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:50,910 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:50,910 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:50,911 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:50,960 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:50,960 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:50,961 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:50,968 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:51,010 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:51,010 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:51,011 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:51,979 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:51,979 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:54,158 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:54,158 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:54,160 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:54,216 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:54,216 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:54,217 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:55,011 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:55,282 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:55,282 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:55,283 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:55,340 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:55,340 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:55,341 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:55,397 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:55,397 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:55,398 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:56,025 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:56,025 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:56,264 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:56,265 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:56,266 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:56,315 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:56,315 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:56,317 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:56,317 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:02:56,317 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:02:56,318 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:02:57,039 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:02:57,309 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:02:57,309 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:02:58,053 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:02:58,309 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:03:04,430 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: log_artifact
+2021-12-13 19:03:04,431 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: log_artifact
+2021-12-13 19:03:05,114 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_109_38178810e20009b5b3d6.table.json
+2021-12-13 19:03:05,115 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table
+2021-12-13 19:03:06,120 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:06,120 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_110_85a5629f267bb56e4ca8.png
+2021-12-13 19:03:06,121 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_110_5d7f615457703cb39d8c.png
+2021-12-13 19:03:06,121 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images
+2021-12-13 19:03:06,186 INFO    Thread-29 :2644 [upload_job.py:push():95] Uploaded file C:\Users\Usuario\.cache\wandb\artifacts\obj\md5\fb\261953ad8a4baf690f54fbee8d14db
+2021-12-13 19:03:07,211 INFO    SenderThread:2644 [sender.py:send_request_log_artifact():989] logged artifact run-2djc7w0r-my_histogram_table - {'id': 'QXJ0aWZhY3Q6NDgwNTgzMTg=', 'digest': '73e34e7855dafb4e0445136c91afec6f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc3MTEyMTY=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgwNTgxOTA=', 'versionIndex': 1}}, 'version': 'latest'}
+2021-12-13 19:03:07,211 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:07,212 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\table\my_histogram_table_109_38178810e20009b5b3d6.table.json with policy now
+2021-12-13 19:03:07,213 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:07,213 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:07,214 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:07,214 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:07,214 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\model_110_85a5629f267bb56e4ca8.png with policy now
+2021-12-13 19:03:07,215 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:07,215 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\GT_110_5d7f615457703cb39d8c.png with policy now
+2021-12-13 19:03:07,220 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:07,220 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:07,221 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:07,223 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:07,223 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:07,224 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:07,224 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:07,225 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:07,225 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:07,225 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:07,225 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:07,226 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:07,880 INFO    Thread-32 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\1zkn0cqn-media/images/GT_110_5d7f615457703cb39d8c.png
+2021-12-13 19:03:07,937 INFO    Thread-31 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\203myof5-media/images/model_110_85a5629f267bb56e4ca8.png
+2021-12-13 19:03:08,114 INFO    Thread-30 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\mdid9m9g-media/table/my_histogram_table_109_38178810e20009b5b3d6.table.json
+2021-12-13 19:03:08,140 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:08,140 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:08,346 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:08,346 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:08,347 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:08,396 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:08,396 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:08,397 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:08,444 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:08,445 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:08,445 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:08,494 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:08,494 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:08,495 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:09,147 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:10,155 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:11,853 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:11,854 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:11,854 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:11,913 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:11,913 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:11,914 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:11,975 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:11,975 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:11,976 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:12,178 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:12,178 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:12,557 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:03:12,557 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:03:13,192 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml
+2021-12-13 19:03:13,220 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:13,220 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:13,221 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:13,270 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:13,270 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:13,271 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:13,320 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:13,320 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:13,320 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:13,372 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:13,372 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:13,373 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:13,425 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:13,425 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:13,426 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:14,204 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:14,204 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:14,608 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:14,608 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:14,609 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:14,658 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:14,658 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:14,659 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:14,708 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:14,708 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:14,708 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:15,214 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:15,533 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:15,533 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:15,534 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:15,583 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:15,583 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:15,584 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:15,633 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:15,633 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:15,634 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:15,683 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:15,683 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:15,684 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:15,734 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:15,735 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:15,735 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:16,220 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:16,221 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:16,851 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:16,852 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:16,853 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:16,902 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:16,902 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:16,902 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:16,951 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:16,951 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:16,952 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:17,001 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:17,001 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:17,002 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:17,234 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:17,393 DEBUG   SenderThread:2644 [sender.py:send():238] send: stats
+2021-12-13 19:03:18,247 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:20,042 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:20,042 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:20,043 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:20,116 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:20,116 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:20,117 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:20,275 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:21,183 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:21,183 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:21,184 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:21,241 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:21,241 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:21,242 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:21,290 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:21,302 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:21,302 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:21,303 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:22,303 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:22,303 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:22,343 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:22,344 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:22,344 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:22,394 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:22,394 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:22,396 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:22,396 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:22,396 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:22,396 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:23,309 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:24,320 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:24,552 DEBUG   SenderThread:2644 [sender.py:send():238] send: config
+2021-12-13 19:03:27,759 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-13 19:03:27,759 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: stop_status
+2021-12-13 19:03:30,468 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: log_artifact
+2021-12-13 19:03:30,468 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: log_artifact
+2021-12-13 19:03:31,388 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_146_9b35b5c27db41046ef73.table.json
+2021-12-13 19:03:31,388 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table
+2021-12-13 19:03:32,179 INFO    Thread-34 :2644 [upload_job.py:push():95] Uploaded file C:\Users\Usuario\.cache\wandb\artifacts\obj\md5\97\8e558509219f402cd3cadcb897c665
+2021-12-13 19:03:32,397 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:32,397 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_147_a4fcbf5fd042b8b2d3a4.png
+2021-12-13 19:03:32,398 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_147_5d7f615457703cb39d8c.png
+2021-12-13 19:03:32,398 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images
+2021-12-13 19:03:33,241 INFO    SenderThread:2644 [sender.py:send_request_log_artifact():989] logged artifact run-2djc7w0r-my_histogram_table - {'id': 'QXJ0aWZhY3Q6NDgwNTg0MDM=', 'digest': '1c53f52a7e8b4e37e4721c70fa550a8d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc3MTEyMTY=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgwNTgzMTg=', 'versionIndex': 2}}, 'version': 'latest'}
+2021-12-13 19:03:33,242 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:33,242 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\table\my_histogram_table_146_9b35b5c27db41046ef73.table.json with policy now
+2021-12-13 19:03:33,243 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:33,243 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:33,243 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:33,244 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:33,244 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\model_147_a4fcbf5fd042b8b2d3a4.png with policy now
+2021-12-13 19:03:33,245 DEBUG   SenderThread:2644 [sender.py:send():238] send: files
+2021-12-13 19:03:33,245 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file media\images\GT_147_5d7f615457703cb39d8c.png with policy now
+2021-12-13 19:03:33,250 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:33,250 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:33,251 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:33,257 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:33,257 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:33,258 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:33,320 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:33,321 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:33,321 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:33,380 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:33,380 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:33,381 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:33,409 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:33,881 INFO    Thread-37 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\1xrm456e-media/images/GT_147_5d7f615457703cb39d8c.png
+2021-12-13 19:03:34,034 INFO    Thread-36 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\feqdch22-media/images/model_147_a4fcbf5fd042b8b2d3a4.png
+2021-12-13 19:03:34,142 INFO    Thread-35 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\AppData\Local\Temp\tmpmjosdgpkwandb\qxq36346-media/table/my_histogram_table_146_9b35b5c27db41046ef73.table.json
+2021-12-13 19:03:34,417 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:34,835 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:34,836 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:34,837 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:34,887 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:34,887 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:34,888 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:34,938 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:34,939 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:34,939 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:34,990 DEBUG   SenderThread:2644 [sender.py:send():238] send: history
+2021-12-13 19:03:34,990 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:34,991 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:35,423 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:36,432 INFO    Thread-12 :2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:38,149 WARNING MainThread:2644 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2021-12-13 19:03:38,712 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:38,712 DEBUG   SenderThread:2644 [sender.py:send():238] send: telemetry
+2021-12-13 19:03:38,712 DEBUG   SenderThread:2644 [sender.py:send():238] send: exit
+2021-12-13 19:03:38,712 INFO    SenderThread:2644 [sender.py:send_exit():370] handling exit code: 255
+2021-12-13 19:03:38,712 INFO    SenderThread:2644 [sender.py:send_exit():372] handling runtime: 119
+2021-12-13 19:03:38,713 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:38,714 INFO    SenderThread:2644 [sender.py:send_exit():382] send defer
+2021-12-13 19:03:38,714 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:38,714 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:38,714 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 0
+2021-12-13 19:03:38,715 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:38,715 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 0
+2021-12-13 19:03:38,715 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 1
+2021-12-13 19:03:38,715 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:38,715 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 1
+2021-12-13 19:03:38,810 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:38,810 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 1
+2021-12-13 19:03:38,810 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 2
+2021-12-13 19:03:38,811 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:38,811 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 2
+2021-12-13 19:03:38,811 DEBUG   SenderThread:2644 [sender.py:send():238] send: stats
+2021-12-13 19:03:38,811 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:38,811 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 2
+2021-12-13 19:03:38,811 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 3
+2021-12-13 19:03:38,811 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:38,811 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 3
+2021-12-13 19:03:38,812 DEBUG   SenderThread:2644 [sender.py:send():238] send: summary
+2021-12-13 19:03:38,812 INFO    SenderThread:2644 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-13 19:03:38,812 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:38,812 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 3
+2021-12-13 19:03:38,812 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 4
+2021-12-13 19:03:38,812 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:38,813 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 4
+2021-12-13 19:03:38,813 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:38,813 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 4
+2021-12-13 19:03:38,826 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,036 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 5
+2021-12-13 19:03:39,036 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:39,036 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:39,036 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 5
+2021-12-13 19:03:39,037 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:39,037 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 5
+2021-12-13 19:03:39,037 INFO    SenderThread:2644 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-12-13 19:03:39,138 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,453 INFO    SenderThread:2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:39,454 INFO    SenderThread:2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml
+2021-12-13 19:03:39,454 INFO    SenderThread:2644 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:39,455 INFO    SenderThread:2644 [dir_watcher.py:finish():313] scan: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files
+2021-12-13 19:03:39,455 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml config.yaml
+2021-12-13 19:03:39,456 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log output.log
+2021-12-13 19:03:39,457 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\requirements.txt requirements.txt
+2021-12-13 19:03:39,461 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-metadata.json wandb-metadata.json
+2021-12-13 19:03:39,461 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json wandb-summary.json
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_110_5d7f615457703cb39d8c.png media\images\GT_110_5d7f615457703cb39d8c.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_147_5d7f615457703cb39d8c.png media\images\GT_147_5d7f615457703cb39d8c.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_36_5d7f615457703cb39d8c.png media\images\GT_36_5d7f615457703cb39d8c.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\GT_73_5d7f615457703cb39d8c.png media\images\GT_73_5d7f615457703cb39d8c.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_110_85a5629f267bb56e4ca8.png media\images\model_110_85a5629f267bb56e4ca8.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_147_a4fcbf5fd042b8b2d3a4.png media\images\model_147_a4fcbf5fd042b8b2d3a4.png
+2021-12-13 19:03:39,474 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_36_029cd81f4dd7cb0d34b9.png media\images\model_36_029cd81f4dd7cb0d34b9.png
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\images\model_73_e268a32e60963964aae0.png media\images\model_73_e268a32e60963964aae0.png
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_109_38178810e20009b5b3d6.table.json media\table\my_histogram_table_109_38178810e20009b5b3d6.table.json
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_146_9b35b5c27db41046ef73.table.json media\table\my_histogram_table_146_9b35b5c27db41046ef73.table.json
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_35_c75443b1e376e1f6f72b.table.json media\table\my_histogram_table_35_c75443b1e376e1f6f72b.table.json
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [dir_watcher.py:finish():327] scan save: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\media\table\my_histogram_table_72_20f8dacc6e0ea52072cd.table.json media\table\my_histogram_table_72_20f8dacc6e0ea52072cd.table.json
+2021-12-13 19:03:39,475 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 6
+2021-12-13 19:03:39,475 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:39,475 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:39,475 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 6
+2021-12-13 19:03:39,476 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:39,476 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 6
+2021-12-13 19:03:39,476 INFO    SenderThread:2644 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-13 19:03:39,578 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,579 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:39,690 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,690 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:39,798 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,798 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:39,907 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:39,907 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,015 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:40,015 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,070 INFO    Thread-41 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\wandb-summary.json
+2021-12-13 19:03:40,077 INFO    Thread-38 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\config.yaml
+2021-12-13 19:03:40,090 INFO    Thread-39 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\output.log
+2021-12-13 19:03:40,108 INFO    Thread-40 :2644 [upload_job.py:push():137] Uploaded file C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\files\requirements.txt
+2021-12-13 19:03:40,124 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:40,124 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,234 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:40,235 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,313 INFO    Thread-11 :2644 [sender.py:transition_state():395] send defer: 7
+2021-12-13 19:03:40,313 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:40,313 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 7
+2021-12-13 19:03:40,313 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:40,313 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 7
+2021-12-13 19:03:40,345 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:40,825 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 8
+2021-12-13 19:03:40,825 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,826 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:40,826 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 8
+2021-12-13 19:03:40,826 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:40,826 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 8
+2021-12-13 19:03:40,826 INFO    SenderThread:2644 [sender.py:transition_state():395] send defer: 9
+2021-12-13 19:03:40,826 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: defer
+2021-12-13 19:03:40,827 INFO    HandlerThread:2644 [handler.py:handle_request_defer():147] handle defer: 9
+2021-12-13 19:03:40,827 DEBUG   SenderThread:2644 [sender.py:send():238] send: final
+2021-12-13 19:03:40,827 DEBUG   SenderThread:2644 [sender.py:send():238] send: footer
+2021-12-13 19:03:40,827 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: defer
+2021-12-13 19:03:40,827 INFO    SenderThread:2644 [sender.py:send_request_defer():391] handle sender defer: 9
+2021-12-13 19:03:40,934 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-13 19:03:40,934 DEBUG   SenderThread:2644 [sender.py:send_request():252] send_request: poll_exit
+2021-12-13 19:03:40,934 INFO    SenderThread:2644 [file_pusher.py:join():182] waiting for file pusher
+2021-12-13 19:03:41,137 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: get_summary
+2021-12-13 19:03:41,138 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: sampled_history
+2021-12-13 19:03:41,139 DEBUG   HandlerThread:2644 [handler.py:handle_request():130] handle_request: shutdown
+2021-12-13 19:03:41,139 INFO    HandlerThread:2644 [handler.py:finish():731] shutting down handler
+2021-12-13 19:03:41,837 INFO    WriterThread:2644 [datastore.py:close():281] close: C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\wandb\run-20211213_190138-2djc7w0r\run-2djc7w0r.wandb
+2021-12-13 19:03:42,146 INFO    SenderThread:2644 [sender.py:finish():1091] shutting down sender
+2021-12-13 19:03:42,146 INFO    SenderThread:2644 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-13 19:03:42,146 INFO    SenderThread:2644 [file_pusher.py:join():182] waiting for file pusher
+2021-12-13 19:03:42,146 INFO    MainThread:2644 [internal.py:handle_exit():77] Internal process exited

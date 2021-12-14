@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 57, in <module>
+    train(10, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 29, in train
+    dataset = SegmentationDataset(path_segmentation, path_diagnosi)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\DataLoader.py", line 18, in __init__
+    self.segmentation_dirs = [x for x in os.listdir(self.path_segmentation) if not 'txt' in x]
+FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada: '02-Cancer_diagnosis/data/NoduleSegmentation/'
