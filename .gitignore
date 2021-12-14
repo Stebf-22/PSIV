@@ -1,6 +1,7 @@
 # Jupyter stuff
 .ipynb_checkpoints/
 .idea/
+.vscode/
 
 # First project
 /01-Car_license_detection/training_data/
