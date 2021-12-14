@@ -54,7 +54,7 @@ class SegmentationDataset(Dataset):
         if self.actual is None:
             img = self._read_images(self.image_counter)
             #print(f"idx is {idx}")
-            res = {'img': resize(img['data'][:, :, idx], (64, 64)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
+            res = {'img': self.transforms(resize(img['data'][:, :, idx], (64, 64))), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
 
         else:
             idx -= self.actual_ofset
@@ -69,9 +69,9 @@ class SegmentationDataset(Dataset):
                 self.image_counter += 1
 
             img = self.actual
-            res = {'img': resize(img['data'][:, :, idx], (64, 64)), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
+            res = {'img': self.transforms(resize(img['data'][:, :, idx], (64, 64))), 'GT': resize(img['GT'][:, :, idx], (64, 64))}
 
-        return {k: self.transforms(v) for k, v in res.items()}
+        return res
 
     def __len__(self):
         # return count_slices("/home/user/PSIV/02-Cancer_diagnosis/data/NoduleSegmentation", "CTD",segmentation=True)
