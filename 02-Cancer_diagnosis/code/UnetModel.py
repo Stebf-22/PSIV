@@ -58,11 +58,12 @@ class UNet(nn.Module):
         self.head        = nn.Conv2d(dec_chs[-1], num_class, 1)
         self.retain_dim  = retain_dim
         self.out_sz = out_sz
-
+        self.sig = torch.nn.Sigmoid()
     def forward(self, x):
         enc_ftrs = self.encoder(x)
         out      = self.decoder(enc_ftrs[::-1][0], enc_ftrs[::-1][1:])
         out      = self.head(out)
         if self.retain_dim:
             out = F.interpolate(out, self.out_sz)
-        return out
+        out = self.sig(out)
+        return (out)

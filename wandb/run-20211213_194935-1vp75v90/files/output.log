@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 72, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 30, in train
+    transforms = T.Compose([T.Lambda(lambda x: ((x - (-640.72930)) /380.79225).astype(np.uint8)), T.Lambda(lambda x:  otsu_transformation(x)), T.ToTensor(), T.ToFloat()])
+AttributeError: module 'torchvision.transforms' has no attribute 'ToFloat'

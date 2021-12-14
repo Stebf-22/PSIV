@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:19<00:00,  1.78it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 65, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\train.py", line 49, in train
+    table = wandb.Table(data=[[element] for batch in out for channel in batch for row in channel for element in row], columns="pixel_val")
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\wandb\data_types.py", line 245, in __init__
+    self._init_from_list(data, columns, optional, dtype)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\wandb\data_types.py", line 268, in _init_from_list
+    self._assert_valid_columns(columns)
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\wandb\data_types.py", line 260, in _assert_valid_columns
+    assert type(columns) is list, "columns argument expects a `list` object"
+AssertionError: columns argument expects a `list` object

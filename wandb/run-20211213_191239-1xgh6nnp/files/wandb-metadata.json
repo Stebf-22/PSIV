@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.9.9",
+    "heartbeatAt": "2021-12-13T18:12:41.059565",
+    "startedAt": "2021-12-13T18:12:39.999403",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\Usuario\\Desktop\\Uni\\DataDaniMAPSIV\\PSIV\\02-Cancer_diagnosis\\code\\train.py",
+    "codePath": "02-Cancer_diagnosis\\code\\train.py",
+    "git": {
+        "remote": "https://github.com/StebF2000/PSIV",
+        "commit": "4936e9c2535671b867362f4fab1f7f847f91506b"
+    },
+    "email": null,
+    "root": "C:/Users/Usuario/Desktop/Uni/DataDaniMAPSIV/PSIV",
+    "host": "Silex-Pro",
+    "username": "Usuario",
+    "executable": "C:\\Users\\Usuario\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\python.exe"
+}
