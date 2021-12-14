@@ -6,7 +6,7 @@
 # python facetracking.py
 
 # import the necessary packages
-from centroidtracker.centroidtracker import CentroidTracker
+from centroidtracker import CentroidTracker
 from imutils.video import VideoStream
 from imutils.video import FPS
 import numpy as np
@@ -24,14 +24,39 @@ ap.add_argument("-c", "--confidence", type=float, default= -0.2,
 	help="minimum probability to filter weak detections")
 ap.add_argument("-s", "--skip-frames", type=int, default=5,
 	help="# of skip frames between detections")
+ap.add_argument("-d", "--detector", type=str, default='HOG',
+	help='face detector, choose HOG or CNN')
+ap.add_argument("-t", "--tracker", type=str, default='mil',
+	help='Tracker choose between: csrt,kcf,boosting,mil,tld,medianflow,mosse')
 args = vars(ap.parse_args())
 
-# load HOG dlib Model
-print("[INFO] loading HOG + Linear SVM people detector...")
-HOGdetector = dlib.get_frontal_face_detector()
+#Define detector
+if args.get('detector') == 'HOG':
+	# load HOG dlib Model
+	print("[INFO] loading HOG + Linear SVM people detector...")
+	detector = dlib.get_frontal_face_detector()
+	detector_type = 'HOG'
+elif args.get('detector') == 'CNN':
+	print('[INFO] loading MMOD CNN face detector')
+	modelPath = '../data/mmod_human_face_detector.dat'
+	detector = dlib.cnn_face_detection_model_v1(modelPath)
+	detector_type = 'CNN'
+else:
+	raise ValueError('Face detector must be HOG or CNN')
 
-# load MIL Tracker
-tracker = cv2.TrackerMIL_create()
+print(f"[INFO] loading {args.get('tracker')} tracker")
+
+OPENCV_OBJECT_TRACKERS = {
+	"csrt": cv2.TrackerCSRT_create,
+	"kcf": cv2.TrackerKCF_create,
+	"boosting": cv2.legacy.TrackerBoosting_create,
+	"mil": cv2.TrackerMIL_create,
+	"tld": cv2.legacy.TrackerTLD_create,
+	"medianflow": cv2.legacy.TrackerMedianFlow_create,
+	"mosse": cv2.legacy.TrackerMOSSE_create
+}
+# load Tracker
+tracker = OPENCV_OBJECT_TRACKERS[args.get('tracker')]()
 
 # if a video path was not supplied, grab a reference to the webcam
 if not args.get("input", False):
@@ -100,38 +125,64 @@ while True:
 		trackers = []
 
 		# convert the frame to a boxesand obtain the detections
-		
-		#HOG Face detector
-		boxes,weights,idx = HOGdetector.run(rgb, 1,-1)
-
-
-
-		# loop over the detections
+		if detector_type == "HOG":
+			#HOG Face detector
+			boxes,weights,idx = detector.run(rgb, 1,-1)
+			# loop over the detections
 	
-		for i,box in enumerate(boxes):
-			if weights[i] > args["confidence"]:
-				startX = box.left()
-				startY = box.top()
-				endX =  box.right()
-				endY = box.bottom()
-				wide = endX - startX
-				high = endY - startY
-				
-				# draw the detected face
-				cv2.rectangle(frame, (startX, startY), (endX, endY),
-					(255, 0, 0), 2)
-				
-				# construct rectangle object from the bounding
-				# box coordinates and then start the  correlation
-				# tracker
-				bbox = (startX, startY, wide, high)
-				ok = tracker.init(rgb, bbox)
+			for i,box in enumerate(boxes):
+				if weights[i] > args["confidence"]:
+					startX = box.left()
+					startY = box.top()
+					endX =  box.right()
+					endY = box.bottom()
+					wide = endX - startX
+					high = endY - startY
+					
+					# draw the detected face
+					cv2.rectangle(frame, (startX, startY), (endX, endY),
+						(255, 0, 0), 2)
+					
+					# construct rectangle object from the bounding
+					# box coordinates and then start the  correlation
+					# tracker
+					bbox = (startX, startY, wide, high)
+					ok = tracker.init(rgb, bbox)
 
-				# add the tracker to our list of trackers so we can
-				# utilize it during skip frames
-				rects.append((startX, startY, endX, endY))
-				trackers.append(tracker)
+					# add the tracker to our list of trackers so we can
+					# utilize it during skip frames
+					rects.append((startX, startY, endX, endY))
+					trackers.append(tracker)
 
+		if detector_type == "CNN":
+			#HOG Face detector
+			dets = detector(rgb, 1,)
+
+			# loop over the detections
+		
+			for i, d in enumerate(dets):
+				if d.confidence > args["confidence"]:
+					startX = d.rect.left()
+					startY = d.rect.top()
+					endX =  d.rect.right()
+					endY = d.rect.bottom()
+					wide = endX - startX
+					high = endY - startY
+					
+					# draw the detected face
+					cv2.rectangle(frame, (startX, startY), (endX, endY),
+						(255, 0, 0), 2)
+					
+					# construct rectangle object from the bounding
+					# box coordinates and then start the  correlation
+					# tracker
+					bbox = (startX, startY, wide, high)
+					ok = tracker.init(rgb, bbox)
+
+					# add the tracker to our list of trackers so we can
+					# utilize it during skip frames
+					rects.append((startX, startY, endX, endY))
+					trackers.append(tracker)
 	# otherwise, we should utilize our object *trackers* rather than
 	# object *detectors* to obtain a higher frame processing throughput
 	else:
@@ -153,8 +204,6 @@ while True:
 			endX = startX + wide
 			endY = startY + high
 			
-			
-
 			# add the bounding box coordinates to the rectangles list
 			rects.append((startX,startY,endX,endY))
 
