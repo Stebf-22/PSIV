@@ -27,7 +27,7 @@ ap.add_argument("-s", "--skip-frames", type=int, default=5,
 ap.add_argument("-d", "--detector", type=str, default='HOG',
 	help='face detector, choose HOG or CNN')
 ap.add_argument("-t", "--tracker", type=str, default='mil',
-	help='Tracker choose between: csrt,kcf,boosting,mil,tld,medianflow,mosse')
+	help='Tracker choose between: csrt, kcf, boosting, mil, tld, medianflow, mosse')
 args = vars(ap.parse_args())
 
 #Define detector
@@ -38,7 +38,7 @@ if args.get('detector') == 'HOG':
 	detector_type = 'HOG'
 elif args.get('detector') == 'CNN':
 	print('[INFO] loading MMOD CNN face detector')
-	modelPath = '../data/mmod_human_face_detector.dat'
+	modelPath = 'data/mmod_human_face_detector.dat'
 	detector = dlib.cnn_face_detection_model_v1(modelPath)
 	detector_type = 'CNN'
 else:
