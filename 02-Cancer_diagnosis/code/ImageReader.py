@@ -65,12 +65,12 @@ def crop_image(img: np.ndarray, affine: np.ndarray, center: np.ndarray, radius: 
         return img
 
 
-def read_img_and_points(path: str, prefix: str = ''):
+def read_img_and_points(path: str, prefix: str = '', n=0):
     img_path = [x for x in os.listdir(path) if 'nii' in x and prefix in x][0]
     img, trf = io.load_nifti_img(path + img_path)
 
     if 'Seg' not in prefix:
-        acsv = [x for x in os.listdir(path) if 'acsv' in x][0]
+        acsv = sorted([x for x in os.listdir(path) if 'acsv' in x])[n]
         affine = trf['affine']
         with open(path + acsv, 'r') as hdlr:
             points = [x for x in hdlr.readlines() if 'point|' in x]

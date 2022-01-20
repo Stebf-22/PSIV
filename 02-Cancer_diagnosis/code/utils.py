@@ -61,12 +61,13 @@ class Utils(object):
 
     def top_params(self, alpha = 0.95, n = None): #retorna els parametres amb millor ci acc
         df = self.df_Grid()
+        
         df['mean'] = df.filter(regex='test').mean(axis = 1) #agafem columnes nombrades 'split*' calculem mitja
         df['sem'] = df.filter(regex='test').apply(scipy.stats.sem, axis = 1) + 1e-8 #standard error of mean
         df['ci'] = df.apply(self.ci(alpha), axis = 1)
         df['sort'] = [0.5 * x[1] - abs(x[0] - x[1]) * 0.5 for x in df['ci']] 
         df = df.sort_values('sort', ascending=False)
-        
+        #df[[x for x in df if x!= 'params']].drop_duplicates(inplace=True)
         if n:
             return df[:n]
         return df[:]

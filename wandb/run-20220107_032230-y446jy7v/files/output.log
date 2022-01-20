@@ -1,0 +1,19 @@
+
+  0%|                                                                                                                                             | 0/47 [00:00<?, ?it/s]
+torch.Size([1, 50, 64, 64])
+torch.Size([50, 1, 64, 64])
+
+  2%|██▊                                                                                                                                  | 1/47 [00:11<08:35, 11.20s/it]
+
+  4%|█████▋                                                                                                                               | 2/47 [00:15<05:19,  7.10s/it]
+torch.Size([1, 50, 64, 64])
+torch.Size([50, 1, 64, 64])
+torch.Size([1, 50, 64, 64])
+tensor([0.9927], device='cuda:0', grad_fn=<SigmoidBackward0>) tensor([1])
+  4%|█████▋                                                                                                                               | 2/47 [00:19<07:07,  9.50s/it]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 87, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 46, in train
+    t,y = transform(element['ROI'].reshape(50,1,64,64).float()).cuda(), element['GT']
+RuntimeError: shape '[50, 1, 64, 64]' is invalid for input of size 139264

@@ -1,0 +1,157 @@
+
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:13<00:21,  1.26it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:41<00:00,  1.21s/it]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:08<00:19,  1.42it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:35<00:00,  1.05s/it]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:06<00:14,  1.91it/s]
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:35<00:00,  1.04s/it]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:08<00:18,  1.43it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:36<00:00,  1.08s/it]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:05<00:14,  1.88it/s]
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:33<00:00,  1.02it/s]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:05<00:12,  2.21it/s]
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:30<00:00,  1.10it/s]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:05<00:13,  2.00it/s]
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:33<00:00,  1.03it/s]
+
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:06<00:14,  1.82it/s]
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:32<00:00,  1.05it/s]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:05<00:12,  2.14it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:30<00:00,  1.10it/s]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:07<00:15,  1.75it/s]
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:35<00:00,  1.05s/it]
+
+
+ 21%|███████████████████████████▍                                                                                                         | 7/34 [00:06<00:14,  1.83it/s]
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:33<00:00,  1.00it/s]
+  0%|                                                                                                                                             | 0/34 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainSegmentationUnet.py", line 77, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainSegmentationUnet.py", line 37, in train
+    for element in tqdm(dataloader):
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\tqdm\std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torch\utils\data\dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torch\utils\data\dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Usuario\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\torch\utils\data\_utils\fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\DataLoader.py", line 56, in __getitem__
+    img = self._read_images(self.image_counter)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\DataLoader.py", line 32, in _read_images
+    data, affine, center, radius = read_img_and_points((self.path_segmentation + patient + '/INSP_SIN/'),
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\ImageReader.py", line 70, in read_img_and_points
+    img, trf = io.load_nifti_img(path + img_path)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\IOFunctions.py", line 18, in load_nifti_img
+    out_nii_array = np.array(nim.get_fdata(), dtype=dtypes)
+KeyboardInterrupt

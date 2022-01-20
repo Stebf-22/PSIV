@@ -3,7 +3,7 @@ import numpy as np
 from sklearn import svm
 from sklearn import neighbors
 from sklearn import tree
-from xgboost import XGBClassifier
+#from xgboost import XGBClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedShuffleSplit
@@ -15,7 +15,8 @@ from utils import Utils
 class ModelHandler(Utils):
 
     models = {'SVM': svm.SVC, 'KNN': neighbors.KNeighborsClassifier,
-              'DT': tree.DecisionTreeClassifier, 'XGB': XGBClassifier}
+              'DT': tree.DecisionTreeClassifier}
+              #, 'XGB': XGBClassifier}
     hyperparams = {'SVM': {
         'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
         'C': np.logspace(-2, 10, 5),
@@ -57,17 +58,17 @@ class ModelHandler(Utils):
         if with_grid:
             self.grid_flag = True
             self.grid.fit(self.X, self.Y)
-            print(f"[INFO] The best parameters are {self.grid.best_params_}")
-            print(f"[INFO] The best score is {self.grid.best_score_:.4f}")
+            #print(f"[INFO] The best parameters are {self.grid.best_params_}")
+            #print(f"[INFO] The best score is {self.grid.best_score_:.4f}")
             top_vals = self.top_params(0.95, 1).params.values[0]
-            print(f"[INFO] The best parameters according to ci are {top_vals}")
+            #print(f"[INFO] The best parameters according to ci are {top_vals}")
             self.model = self.model.__class__(**top_vals)
             self.model.fit(self.X, self.Y)
         else:
             self.model = self.model.fit(self.X, self.Y)
         if with_score:
             pred = self.predict(self.X)
-            print(f"[INFO] Train acc  is : {self._acc(pred, self.Y):.4f}")
+            #print(f"[INFO] Train acc  is : {self._acc(pred, self.Y):.4f}")
 
     def predict(self, X):
         X = self._ensure_dimensionalit(X)

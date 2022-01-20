@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 79, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 35, in train
+    dataset = DiagnosisEnd2End('/home/user/PSIV/02-Cancer_diagnosis/data/Diagnosis',  "02-Cancer_diagnosis/data/Diagnosis/Radiolung_NoduleDiagnosis.csv")
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\DataLoader.py", line 86, in __init__
+    self.diagnosis_path: list = [diagnosis_path + patient + "/" for patient in os.listdir(diagnosis_path)
+FileNotFoundError: [WinError 3] El sistema no puede encontrar la ruta especificada: '/home/user/PSIV/02-Cancer_diagnosis/data/Diagnosis'

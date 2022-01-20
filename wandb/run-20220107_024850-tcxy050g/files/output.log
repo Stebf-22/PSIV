@@ -1,0 +1,7 @@
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 79, in <module>
+    train(20, model, optimizer, None, loss)
+  File "C:\Users\Usuario\Desktop\Uni\DataDaniMAPSIV\PSIV\02-Cancer_diagnosis\code\trainClassifier.py", line 65, in train
+    wandb.log({"model": wandb.Image(out),
+UnboundLocalError: local variable 'out' referenced before assignment
